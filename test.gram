@@ -1,0 +1,85 @@
+#JSGF V1.0;
+
+grammar colors;
+
+
+<greetings> = hello | hey | greetings;
+
+
+<time> = time;
+
+<class> = course | class;
+
+<question> = when | what;
+
+<place> = location | room;
+
+//class timing
+
+public <classtime> = ( <question> <class> (<time> | start) ) | ( <question> (<time> | start) [is the] <class> );
+
+// prof name
+
+public <professorName> = ( who ) (take | takes | teach | teaches) <class> | ( who | what ) [is the] professor [name];
+
+<interactProf> = meet | see | ask | contact ;
+
+// office hours
+
+public <officeHours> = <question> (office hours | <interactProf> professor);
+
+
+// office location
+
+
+public <officeLocation> = ( where <interactProf> professor) ) | ( where professor <place> );
+
+// exam details
+
+<finals> = final [ exam ] | last exam ;
+
+<midterm> = midterm [ exam ] ; 
+
+<due> = due | dead line;
+
+public <finalDetails> = when <finals> [ time ];
+
+public <midtermDetails> = <question> <finals> [ time ];
+
+
+// assignment
+
+<lab> = lab | assignment ;
+
+// general lab 
+public <labDetails> = <question> <lab>;
+
+// specific lab due
+
+public <labDue> = when <lab> (one | two) <due> ;
+
+// specific lab due
+
+public <labDetails> = what ( is | do we (do | submit | make) for ) <lab> (one | two);
+
+
+// syllabus
+
+public <syllabus> = what [ taught | teach ] <class> [ syllabus ];
+
+
+// class location 
+
+
+public <classLocation> = where class [ <place> ];
+
+// project due
+
+public <projectDue> = <question> project <due> [day | date];
+
+// TODO: Project details
+
+
+
+
+
