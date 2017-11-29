@@ -1,0 +1,123 @@
+classtime-when course time
+classtime-when course start
+classtime-when class time
+classtime-when class start
+classtime-what course time
+classtime-what course start
+classtime-what class time
+classtime-what class start
+classtime-when time course
+classtime-when time class
+classtime-when time is the course
+classtime-when time is the class
+classtime-when start course
+classtime-when start class
+classtime-when start is the course
+classtime-when start is the class
+classtime-what time course
+classtime-what time class
+classtime-what time is the course
+classtime-what time is the class
+classtime-what start course
+classtime-what start class
+classtime-what start is the course
+classtime-what start is the class
+professorName-who take course
+professorName-who take class
+professorName-who takes course
+professorName-who takes class
+professorName-who teach course
+professorName-who teach class
+professorName-who teaches course
+professorName-who teaches class
+professorName-who professor
+professorName-who professor name
+professorName-who is the professor
+professorName-who is the professor name
+professorName-what professor
+professorName-what professor name
+professorName-what is the professor
+professorName-what is the professor name
+officeHours-when office hours
+officeHours-when meet professor
+officeHours-when see professor
+officeHours-when ask professor
+officeHours-when contact professor
+officeHours-what office hours
+officeHours-what meet professor
+officeHours-what see professor
+officeHours-what ask professor
+officeHours-what contact professor
+finalDetails-when final
+finalDetails-when final time
+finalDetails-when final exam
+finalDetails-when final exam time
+finalDetails-when last exam
+finalDetails-when last exam time
+midtermDetails-when final
+midtermDetails-when final time
+midtermDetails-when final exam
+midtermDetails-when final exam time
+midtermDetails-when last exam
+midtermDetails-when last exam time
+midtermDetails-what final
+midtermDetails-what final time
+midtermDetails-what final exam
+midtermDetails-what final exam time
+midtermDetails-what last exam
+midtermDetails-what last exam time
+labDetails-when lab
+labDetails-when assignment
+labDetails-what lab
+labDetails-what assignment
+labDetails-what is lab one
+labDetails-what is lab two
+labDetails-what is assignment one
+labDetails-what is assignment two
+labDetails-what do we do for lab one
+labDetails-what do we do for lab two
+labDetails-what do we do for assignment one
+labDetails-what do we do for assignment two
+labDetails-what do we submit for lab one
+labDetails-what do we submit for lab two
+labDetails-what do we submit for assignment one
+labDetails-what do we submit for assignment two
+labDetails-what do we make for lab one
+labDetails-what do we make for lab two
+labDetails-what do we make for assignment one
+labDetails-what do we make for assignment two
+labDue-when lab one due
+labDue-when lab one dead line
+labDue-when lab two due
+labDue-when lab two dead line
+labDue-when assignment one due
+labDue-when assignment one dead line
+labDue-when assignment two due
+labDue-when assignment two dead line
+syllabus-what course
+syllabus-what course syllabus
+syllabus-what class
+syllabus-what class syllabus
+syllabus-what taught course
+syllabus-what taught course syllabus
+syllabus-what taught class
+syllabus-what taught class syllabus
+syllabus-what teach course
+syllabus-what teach course syllabus
+syllabus-what teach class
+syllabus-what teach class syllabus
+classLocation-where class
+classLocation-where class location
+classLocation-where class room
+projectDue-when project due
+projectDue-when project due day
+projectDue-when project due date
+projectDue-when project dead line
+projectDue-when project dead line day
+projectDue-when project dead line date
+projectDue-what project due
+projectDue-what project due day
+projectDue-what project due date
+projectDue-what project dead line
+projectDue-what project dead line day
+projectDue-what project dead line date
