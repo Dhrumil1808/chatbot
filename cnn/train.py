@@ -28,7 +28,7 @@ tf.flags.DEFINE_string("all_data_file", "data.train", "Combined dataset")
 tf.flags.DEFINE_integer("batch_size", 6, "Batch Size (default: 64)")
 tf.flags.DEFINE_integer("num_epochs", 20, "Number of training epochs (default: 200)")
 tf.flags.DEFINE_integer("evaluate_every", 5, "Evaluate model on dev set after this many steps (default: 100)")
-#tf.flags.DEFINE_integer("checkpoint_every", 5, "Save model after this many steps (default: 100)")
+tf.flags.DEFINE_integer("checkpoint_every", 5, "Save model after this many steps (default: 100)")
 # Misc Parameters
 tf.flags.DEFINE_boolean("allow_soft_placement", True, "Allow device soft device placement")
 tf.flags.DEFINE_boolean("log_device_placement", False, "Log placement of ops on devices")
@@ -185,7 +185,8 @@ with tf.Graph().as_default():
             current_step = tf.train.global_step(sess, global_step)
             if current_step % FLAGS.evaluate_every == 0:
                 print("\nEvaluation:")
-               # print x_dev
-               # print y_dev
                 dev_step(x_dev, y_dev, writer=dev_summary_writer)
+            if current_step % FLAGS.checkpoint_every == 0:
+                path = saver.save(sess, checkpoint_prefix, global_step=current_step)
+                print("Saved model checkpoint to {}\n".format(path))    
            
