@@ -1,0 +1,25 @@
+Descript,Category
+what project dead line date,projectDue
+what start is the course,classtime
+what start is the class,classtime
+what is the professor name,professorName
+what contact professor,officeHours
+when last exam time,finalDetails
+what midterm exam time,midtermDetails
+what assignment,labDetails
+when assignment two dead line,labDue
+what is lab one,labDetails
+what teach class syllabus,syllabus
+where class,classLocation
+when is due date of assignment1,labDetails
+when to contact professor,officeHours
+how much marks is final exam,finalDetails
+how much marks is midterm exam,midtermDetails
+Which day is the class,classtime
+Where is the class,classLocation
+What is the weightage of assignments,labDetails
+Is CNN in the syllabus,syllabus
+How many days in a week is the class,classtime
+What is the timing for midterm exam,midtermDetails
+What is the timing for final exam,finalDetails
+Is RNN in the portion,syllabus
