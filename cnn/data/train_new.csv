@@ -1,124 +1,124 @@
-Dates,Descript,Category,DayOfWeek,PdDistrict,Resolution,Address,X,Y
-2015-05-13 23:53:00,when course time,classtime,Wednesday,NORTHERN,"ARREST, BOOKED",OAK ST / LAGUNA ST,-122.4258916751,37.7745985957
-2015-05-13 23:53:00,when course start,classtime,Wednesday,NORTHERN,"ARREST, BOOKED",OAK ST / LAGUNA ST,-122.4258916751,37.7745985957
-2015-05-13 23:33:00,when class time,classtime,Wednesday,NORTHERN,"ARREST, BOOKED",VANNESS AV / GREENWICH ST,-122.4243630215,37.800414322
-2015-05-13 23:30:00,when class start,classtime,Wednesday,NORTHERN,NONE,1500 Block of LOMBARD ST,-122.4269953268,37.8008726328
-2015-05-13 23:30:00,what course time,classtime,Wednesday,PARK,NONE,100 Block of BRODERICK ST,-122.4387376228,37.7715411721
-2015-05-13 23:30:00,what course start,classtime,Wednesday,INGLESIDE,NONE,0 Block of TEDDY AV,-122.4032523612,37.7134307041
-2015-05-13 23:30:00,what class time,classtime,Wednesday,INGLESIDE,NONE,AVALON AV / PERU AV,-122.4233269767,37.7251380404
-2015-05-13 23:30:00,what class start,classtime,Wednesday,BAYVIEW,NONE,KIRKWOOD AV / DONAHUE ST,-122.3712743174,37.727564072
-2015-05-13 23:00:00,when time course,classtime,Wednesday,RICHMOND,NONE,600 Block of 47TH AV,-122.5081940311,37.7766012607
-2015-05-13 23:00:00,when time class,classtime,Wednesday,CENTRAL,NONE,JEFFERSON ST / LEAVENWORTH ST,-122.4190876767,37.8078015517
-2015-05-13 22:58:00,when time is the course,classtime,Wednesday,CENTRAL,NONE,JEFFERSON ST / LEAVENWORTH ST,-122.4190876767,37.8078015517
-2015-05-13 22:30:00,when time is the class,classtime,Wednesday,TARAVAL,NONE,0 Block of ESCOLTA WY,-122.4879830728,37.7376666543
-2015-05-13 22:30:00,when start course,classtime,Wednesday,TENDERLOIN,NONE,TURK ST / JONES ST,-122.4124142636,37.7830037965
-2015-05-13 22:06:00,when start class,classtime,Wednesday,NORTHERN,NONE,FILLMORE ST / GEARY BL,-122.4329146035,37.7843533427
-2015-05-13 22:00:00,when start is the course,classtime,Wednesday,BAYVIEW,NONE,200 Block of WILLIAMS AV,-122.3977444271,37.7299346936
-2015-05-13 22:00:00,when start is the class,classtime,Wednesday,BAYVIEW,NONE,0 Block of MENDELL ST,-122.383691504,37.743189042
-2015-05-13 22:00:00,what time course,classtime,Wednesday,TENDERLOIN,NONE,EDDY ST / JONES ST,-122.4125973772,37.7839320277
-2015-05-13 21:55:00,what time class,classtime,Wednesday,INGLESIDE,NONE,GODEUS ST / MISSION ST,-122.4216815316,37.7428222005
-2015-05-13 21:40:00,what time is the course,classtime,Wednesday,BAYVIEW,"ARREST, BOOKED",MENDELL ST / HUDSON AV,-122.38640087,37.7389834911
-2015-05-13 21:30:00,what time is the class,classtime,Wednesday,TENDERLOIN,NONE,100 Block of JONES ST,-122.4122497676,37.7825563302
-2015-05-13 21:30:00,what start course,classtime,Wednesday,INGLESIDE,NONE,200 Block of EVELYN WY,-122.4493891113,37.7426688026
-2015-05-13 21:17:00,what start class,classtime,Wednesday,INGLESIDE,NONE,1600 Block of VALENCIA ST,-122.4202721353,37.7473316299
-2015-05-13 21:11:00,what start is the course,classtime,Wednesday,TENDERLOIN,NONE,100 Block of JONES ST,-122.4122497676,37.7825563302
-2015-05-13 21:11:00,what start is the class,classtime,Wednesday,TENDERLOIN,NONE,100 Block of JONES ST,-122.4122497676,37.7825563302
-2015-05-13 21:10:00,who take course,professorName,Wednesday,NORTHERN,NONE,FILLMORE ST / LOMBARD ST,-122.4360492036,37.7998412229
-2015-05-13 21:00:00,who take class,professorName,Wednesday,TENDERLOIN,NONE,300 Block of OFARRELL ST,-122.4105092588,37.7860432223
-2015-05-13 21:00:00,who takes course,professorName,Wednesday,NORTHERN,NONE,2000 Block of BUSH ST,-122.431017557,37.7873880712
-2015-05-13 21:00:00,who takes class,professorName,Wednesday,INGLESIDE,NONE,500 Block of COLLEGE AV,-122.4236563429,37.7325564882
-2015-05-13 21:00:00,who teach course,professorName,Wednesday,TARAVAL,NONE,19TH AV / SANTIAGO ST,-122.4757734979,37.7449190696
-2015-05-13 20:56:00,who teach class,professorName,Wednesday,TARAVAL,NONE,2000 Block of 41ST AV,-122.4997871207,37.7485176035
-2015-05-13 20:54:00,who teaches course,professorName,Wednesday,NORTHERN,NONE,1300 Block of WEBSTER ST,-122.4310463661,37.7830295716
-2015-05-13 20:50:00,who teaches class,professorName,Wednesday,MISSION,"ARREST, BOOKED",400 Block of CASTRO ST,-122.4351500998,37.7617597244
-2015-05-13 20:45:00,who professor,professorName,Wednesday,NORTHERN,NONE,1500 Block of FILLMORE ST,-122.4327438226,37.7838424506
-2015-05-13 20:30:00,who professor name,professorName,Wednesday,NORTHERN,NONE,1600 Block of WEBSTER ST,-122.4313095407,37.7858706273
-2015-05-13 20:30:00,who is the professor,professorName,Wednesday,NORTHERN,NONE,1600 Block of WEBSTER ST,-122.4313095407,37.7858706273
-2015-05-13 20:30:00,who is the professor name,professorName,Wednesday,SOUTHERN,NONE,KING ST / 3RD ST,-122.3918456172,37.7781247783
-2015-05-13 20:30:00,what professor,professorName,Wednesday,NORTHERN,NONE,VALLEJO ST / BUCHANAN ST,-122.4318307238,37.7956417033
-2015-05-13 20:30:00,what professor name,professorName,Wednesday,NORTHERN,NONE,CALIFORNIA ST / BUCHANAN ST,-122.4305517798,37.7893227716
-2015-05-13 20:29:00,what is the professor,professorName,Wednesday,TARAVAL,NONE,1400 Block of HOLLOWAY AV,-122.4731820296,37.7215647406
-2015-05-13 20:25:00,what is the professor name,professorName,Wednesday,INGLESIDE,NONE,0 Block of WINDING WY,-122.4324464629,37.7108326541
-2015-05-13 20:23:00,when office hours,officeHours,Wednesday,SOUTHERN,NONE,700 Block of MARKET ST,-122.4052948452,37.7863072236
-2015-05-13 20:15:00,when meet professor,officeHours,Wednesday,SOUTHERN,NONE,1600 Block of MARKET ST,-122.4221275795,37.7730330184
-2015-05-13 20:15:00,when see professor,officeHours,Wednesday,TENDERLOIN,NONE,0 Block of STOCKTON ST,-122.4063518343,37.7860311576
-2015-05-13 20:06:00,when ask professor,officeHours,Wednesday,BAYVIEW,"ARREST, BOOKED",300 Block of WILLIAMS AV,-122.3994436589,37.7301760162
-2015-05-13 20:06:00,when contact professor,officeHours,Wednesday,BAYVIEW,"ARREST, BOOKED",300 Block of WILLIAMS AV,-122.3994436589,37.7301760162
-2015-05-13 20:00:00,what office hours,officeHours,Wednesday,CENTRAL,"ARREST, CITED",800 Block of LEAVENWORTH ST,-122.4152120314,37.7888714498
-2015-05-13 20:00:00,what meet professor,officeHours,Wednesday,INGLESIDE,NONE,0 Block of CRESCENT AV,-122.4237023253,37.7352327878
-2015-05-13 20:00:00,what see professor,officeHours,Wednesday,TARAVAL,NONE,LINCOLN WY / 14TH AV,-122.4717998274,37.7656866988
-2015-05-13 19:55:00,what ask professor,officeHours,Wednesday,CENTRAL,NONE,SUTTER ST / POWELL ST,-122.4085973867,37.7892242059
-2015-05-13 19:52:00,what contact professor,officeHours,Wednesday,PARK,"ARREST, BOOKED",1500 Block of HAIGHT ST,-122.4477611223,37.7698464875
-2015-05-13 19:33:00,when final,finalDetails,Wednesday,BAYVIEW,NONE,23RD ST / WISCONSIN ST,-122.3986955897,37.7547456011
-2015-05-13 19:33:00,when final time,finalDetails,Wednesday,BAYVIEW,NONE,23RD ST / WISCONSIN ST,-122.3986955897,37.7547456011
-2015-05-13 19:30:00,when final exam,finalDetails,Wednesday,SOUTHERN,NONE,0 Block of 3RD ST,-122.4032848431,37.787306416
-2015-05-13 19:30:00,when final exam time,finalDetails,Wednesday,SOUTHERN,NONE,500 Block of BRANNAN ST,-122.3976155679,37.7773918243
-2015-05-13 19:30:00,when last exam,finalDetails,Wednesday,SOUTHERN,NONE,OTIS ST / GOUGH ST,-122.4203472088,37.7717690722
-2015-05-13 19:30:00,when last exam time,finalDetails,Wednesday,SOUTHERN,NONE,MISSION ST / 2ND ST,-122.3998021458,37.7880065324
-2015-05-13 19:30:00,when final,midtermDetails,Wednesday,NORTHERN,NONE,GEARY ST / VANNESS AV,-122.4213958191,37.7856843389
-2015-05-13 19:30:00,when final time,midtermDetails,Wednesday,SOUTHERN,NONE,HARRISON ST / 10TH ST,-122.41127919,37.7715785765
-2015-05-13 19:30:00,when final exam,midtermDetails,Wednesday,NORTHERN,NONE,GEARY BL / LAGUNA ST,-122.4279911519,37.7849531242
-2015-05-13 19:28:00,when final exam time,midtermDetails,Wednesday,CENTRAL,NONE,0 Block of SANSOME ST,-122.4007197858,37.7907124696
-2015-05-13 19:28:00,when last exam,midtermDetails,Wednesday,CENTRAL,NONE,0 Block of SANSOME ST,-122.4007197858,37.7907124696
-2015-05-13 19:26:00,when last exam time,midtermDetails,Wednesday,CENTRAL,NONE,900 Block of BUSH ST,-122.4129289552,37.7896868266
-2015-05-13 19:26:00,what final,midtermDetails,Wednesday,CENTRAL,NONE,900 Block of BUSH ST,-122.4129289552,37.7896868266
-2015-05-13 19:19:00,what final time,midtermDetails,Wednesday,SOUTHERN,NONE,0 Block of MARKET ST,-122.3950977742,37.7940590486
-2015-05-13 19:15:00,what final exam,midtermDetails,Wednesday,SOUTHERN,NONE,300 Block of 10TH ST,-122.4116366219,37.7717869351
-2015-05-13 19:15:00,what final exam time,midtermDetails,Wednesday,TARAVAL,NONE,19TH AV / WINSTON DR,-122.4748991517,37.726990531
-2015-05-13 19:11:00,what last exam,midtermDetails,Wednesday,TENDERLOIN,NONE,400 Block of HYDE ST,-122.4162358524,37.7849125738
-2015-05-13 19:11:00,what last exam time,midtermDetails,Wednesday,TENDERLOIN,NONE,400 Block of HYDE ST,-122.4162358524,37.7849125738
-2015-05-13 19:11:00,when lab,labDetails,Wednesday,TENDERLOIN,NONE,400 Block of HYDE ST,-122.4162358524,37.7849125738
-2015-05-13 19:11:00,when assignment,labDetails,Wednesday,SOUTHERN,NONE,400 Block of BRANNAN ST,-122.3959859709,37.7788348206
-2015-05-13 19:00:00,what lab,labDetails,Wednesday,SOUTHERN,NONE,400 Block of BRANNAN ST,-122.3959859709,37.7788348206
-2015-05-13 19:00:00,what assignment,labDetails,Wednesday,NORTHERN,NONE,2000 Block of SUTTER ST,-122.434121356,37.7860330497
-2015-05-13 19:00:00,when lab one due,labDue,Wednesday,BAYVIEW,NONE,100 Block of PAUL AV,-122.3971362174,37.7228049825
-2015-05-13 19:00:00,when lab one dead line,labDue,Wednesday,MISSION,NONE,26TH ST / GUERRERO ST,-122.4225723342,37.748774005
-2015-05-13 19:00:00,when lab two due,labDue,Wednesday,CENTRAL,NONE,STOCKTON ST / SUTTER ST,-122.4069586606,37.789434763
-2015-05-13 18:58:00,when lab two dead line,labDue,Wednesday,MISSION,NONE,1900 Block of MISSION ST,-122.4196766162,37.7658510977
-2015-05-13 18:58:00,when assignment one due,labDue,Wednesday,MISSION,NONE,1900 Block of MISSION ST,-122.4196766162,37.7658510977
-2015-05-13 18:55:00,when assignment one dead line,labDue,Wednesday,PARK,PSYCHOPATHIC CASE,4600 Block of 18TH ST,-122.4424964876,37.7604858807
-2015-05-13 18:45:00,when assignment two due,labDue,Wednesday,SOUTHERN,NONE,0 Block of FREELON ST,-122.3964114555,37.7791876147
-2015-05-13 18:45:00,when assignment two dead line,labDue,Wednesday,MISSION,"ARREST, BOOKED",17TH ST / TREAT AV,-122.4135916956,37.7638222259
-2015-05-13 18:45:00,what is lab one,labDetails,Wednesday,CENTRAL,NONE,PACIFIC AV / SANSOME ST,-122.4020425842,37.7975048898
-2015-05-13 18:42:00,what is lab two,labDetails,Wednesday,NORTHERN,NONE,1900 Block of POLK ST,-122.4214269222,37.7946028272
-2015-05-13 18:42:00,what is assignment one,labDetails,Wednesday,NORTHERN,NONE,1900 Block of POLK ST,-122.4214269222,37.7946028272
-2015-05-13 18:39:00,what is assignment two,labDetails,Wednesday,TENDERLOIN,"ARREST, CITED",200 Block of GOLDEN GATE AV,-122.4142633904,37.7817569848
-2015-05-13 18:30:00,what do we do for lab one,labDetails,Wednesday,INGLESIDE,"ARREST, BOOKED",3100 Block of HARRISON ST,-122.4115041507,37.747785907
-2015-05-13 18:30:00,what do we do for lab two,labDetails,Wednesday,PARK,NONE,1000 Block of SCOTT ST,-122.4369999072,37.7791621676
-2015-05-13 18:30:00,what do we do for assignment one,labDetails,Wednesday,RICHMOND,NONE,1000 Block of POINTLOBOS AV,-122.5136420643,37.7784692199
-2015-05-13 18:30:00,what do we do for assignment two,labDetails,Wednesday,BAYVIEW,NONE,1300 Block of FELTON ST,-122.4179379683,37.726605137
-2015-05-13 18:30:00,what do we submit for lab one,labDetails,Wednesday,NORTHERN,NONE,1500 Block of FILLMORE ST,-122.4327438226,37.7838424506
-2015-05-13 18:30:00,what do we submit for lab two,labDetails,Wednesday,CENTRAL,NONE,PINE ST / GRANT AV,-122.405744762,37.7914980828
-2015-05-13 18:20:00,what do we submit for assignment one,labDetails,Wednesday,NORTHERN,NONE,600 Block of VANNESS AV,-122.4206913867,37.7814832524
-2015-05-13 18:16:00,what do we submit for assignment two,labDetails,Wednesday,TENDERLOIN,NONE,400 Block of EDDY ST,-122.415088721,37.7836719564
-2015-05-13 18:15:00,what do we make for lab one,labDetails,Wednesday,TARAVAL,NONE,WESTPORTAL AV / VICENTE ST,-122.4669911121,37.7397231592
-2015-05-13 18:15:00,what do we make for lab two,labDetails,Wednesday,CENTRAL,NONE,GREENWICH ST / LEAVENWORTH ST,-122.4178006152,37.8012683839
-2015-05-13 18:10:00,what do we make for assignment one,labDetails,Wednesday,CENTRAL,NONE,BAY ST / HYDE ST,-122.4201800013,37.8047896507
-2015-05-13 18:05:00,what do we make for assignment two,labDetails,Wednesday,BAYVIEW,NONE,SAN BRUNO AV / BURROWS ST,-122.4040999298,37.7288373396
-2015-05-13 18:02:00,what course,syllabus,Wednesday,MISSION,"ARREST, BOOKED",25TH ST / SHOTWELL ST,-122.415014685,37.7508363917
-2015-05-13 18:00:00,what course syllabus,syllabus,Wednesday,SOUTHERN,NONE,0 Block of 6TH ST,-122.4095043094,37.7815262717
-2015-05-13 18:00:00,what class,syllabus,Wednesday,BAYVIEW,NONE,ILLINOIS ST / 20TH ST,-122.3875713063,37.7605499565
-2015-05-13 18:00:00,what class syllabus,syllabus,Wednesday,PARK,NONE,CASTRO ST / 16TH ST,-122.4353184233,37.7641020287
-2015-05-13 18:00:00,what taught course,syllabus,Wednesday,PARK,NONE,COLE ST / FULTON ST,-122.4513600612,37.7751741555
-2015-05-13 18:00:00,what taught course syllabus,syllabus,Wednesday,CENTRAL,NONE,LEAVENWORTH ST / BAY ST,-122.4185339724,37.804997735
-2015-05-13 17:55:00,what taught class,syllabus,Wednesday,SOUTHERN,"ARREST, BOOKED",1200 Block of MARKET ST,-122.4154487596,37.7782935201
-2015-05-13 17:55:00,what taught class syllabus,syllabus,Wednesday,SOUTHERN,"ARREST, BOOKED",1200 Block of MARKET ST,-122.4154487596,37.7782935201
-2015-05-13 17:55:00,what teach course,syllabus,Wednesday,SOUTHERN,"ARREST, BOOKED",1200 Block of MARKET ST,-122.4154487596,37.7782935201
-2015-05-13 17:50:00,what teach course syllabus,syllabus,Wednesday,CENTRAL,NONE,400 Block of GREEN ST,-122.4070086257,37.7996968892
-2015-05-13 17:48:00,what teach class,syllabus,Wednesday,NORTHERN,NONE,0 Block of DANIELBURNHAM CT,-122.4225405542,37.7869088658
-2015-05-13 17:47:00,what teach class syllabus,syllabus,Wednesday,BAYVIEW,NONE,0 Block of WHITFIELD CT,-122.3818379303,37.7311043532
-2015-05-13 17:47:00,where class,classLocation,Wednesday,BAYVIEW,NONE,0 Block of WHITFIELD CT,-122.3818379303,37.7311043532
-2015-05-13 17:47:00,where class location,classLocation,Wednesday,BAYVIEW,NONE,0 Block of WHITFIELD CT,-122.3818379303,37.7311043532
-2015-05-13 17:47:00,where class room,classLocation,Wednesday,BAYVIEW,NONE,0 Block of WHITFIELD CT,-122.3818379303,37.7311043532
-2015-05-13 17:45:00,when project due,projectDue,Wednesday,CENTRAL,"ARREST, BOOKED",700 Block of GEARY ST,-122.4156326543,37.7863587808
-2015-05-13 17:45:00,when project due day,projectDue,Wednesday,RICHMOND,NONE,500 Block of JOHNFKENNEDY DR,-122.4662046679,37.7725405392
-2015-05-13 17:45:00,when project due date,projectDue,Wednesday,CENTRAL,"ARREST, BOOKED",700 Block of GEARY ST,-122.4156326543,37.7863587808
-2015-05-13 17:40:00,when project dead line,projectDue,Wednesday,CENTRAL,NONE,1400 Block of STOCKTON ST,-122.409031506,37.7992531926
-2015-05-13 17:40:00,when project dead line day,projectDue,Wednesday,INGLESIDE,NONE,SAN JOSE AV / 29TH ST,-122.4226721924,37.7439432704
-2015-05-13 17:37:00,when project dead line date,projectDue,Wednesday,TENDERLOIN,NONE,EDDY ST / LEAVENWORTH ST,-122.4142429559,37.7837240254
-2015-05-13 17:37:00,what project due,projectDue,Wednesday,TENDERLOIN,NONE,EDDY ST / LEAVENWORTH ST,-122.4142429559,37.7837240254
-2015-05-13 17:35:00,what project due day,projectDue,Wednesday,SOUTHERN,NONE,1300 Block of MISSION ST,-122.4156580748,37.7753924754
-2015-05-13 17:30:00,what project due date,projectDue,Wednesday,MISSION,NONE,2300 Block of MISSION ST,-122.4190588681,37.7594227506
-2015-05-13 17:30:00,what project dead line,projectDue,Wednesday,INGLESIDE,"ARREST, CITED",CRESCENT AV / ANDOVER ST,-122.416824272,37.7348885156
-2015-05-13 17:30:00,what project dead line day,projectDue,Wednesday,SOUTHERN,NONE,11TH ST / HARRISON ST,-122.4124832635,37.7706305911
-2015-05-13 17:30:01,what project dead line date,projectDue,Thursday,SOUTHERN,NONE,12TH ST / HARRISON ST,-121.4124832635,38.7706305911
+Descript,Category
+when course time,classtime
+when course start,classtime
+when class time,classtime
+when class start,classtime
+what course time,classtime
+what course start,classtime
+what class time,classtime
+what class start,classtime
+when time course,classtime
+when time class,classtime
+when time is the course,classtime
+when time is the class,classtime
+when start course,classtime
+when start class,classtime
+when start is the course,classtime
+when start is the class,classtime
+what time course,classtime
+what time class,classtime
+what time is the course,classtime
+what time is the class,classtime
+what start course,classtime
+what start class,classtime
+what start is the course,classtime
+what start is the class,classtime
+who take course,professorName
+who take class,professorName
+who takes course,professorName
+who takes class,professorName
+who teach course,professorName
+who teach class,professorName
+who teaches course,professorName
+who teaches class,professorName
+who professor,professorName
+who professor name,professorName
+who is the professor,professorName
+who is the professor name,professorName
+what professor,professorName
+what professor name,professorName
+what is the professor,professorName
+what is the professor name,professorName
+when office hours,officeHours
+when meet professor,officeHours
+when see professor,officeHours
+when ask professor,officeHours
+when contact professor,officeHours
+what office hours,officeHours
+what meet professor,officeHours
+what see professor,officeHours
+what ask professor,officeHours
+what contact professor,officeHours
+when final,finalDetails
+when final time,finalDetails
+when final exam,finalDetails
+when final exam time,finalDetails
+when last exam,finalDetails
+when last exam time,finalDetails
+when final,midtermDetails
+when final time,midtermDetails
+when final exam,midtermDetails
+when final exam time,midtermDetails
+when last exam,midtermDetails
+when last exam time,midtermDetails
+what final,midtermDetails
+what final time,midtermDetails
+what final exam,midtermDetails
+what final exam time,midtermDetails
+what last exam,midtermDetails
+what last exam time,midtermDetails
+when lab,labDetails
+when assignment,labDetails
+what lab,labDetails
+what assignment,labDetails
+when lab one due,labDue
+when lab one dead line,labDue
+when lab two due,labDue
+when lab two dead line,labDue
+when assignment one due,labDue
+when assignment one dead line,labDue
+when assignment two due,labDue
+when assignment two dead line,labDue
+what is lab one,labDetails
+what is lab two,labDetails
+what is assignment one,labDetails
+what is assignment two,labDetails
+what do we do for lab one,labDetails
+what do we do for lab two,labDetails
+what do we do for assignment one,labDetails
+what do we do for assignment two,labDetails
+what do we submit for lab one,labDetails
+what do we submit for lab two,labDetails
+what do we submit for assignment one,labDetails
+what do we submit for assignment two,labDetails
+what do we make for lab one,labDetails
+what do we make for lab two,labDetails
+what do we make for assignment one,labDetails
+what do we make for assignment two,labDetails
+what course,syllabus
+what course syllabus,syllabus
+what class,syllabus
+what class syllabus,syllabus
+what taught course,syllabus
+what taught course syllabus,syllabus
+what taught class,syllabus
+what taught class syllabus,syllabus
+what teach course,syllabus
+what teach course syllabus,syllabus
+what teach class,syllabus
+what teach class syllabus,syllabus
+where class,classLocation
+where class location,classLocation
+where class room,classLocation
+when project due,projectDue
+when project due day,projectDue
+when project due date,projectDue
+when project dead line,projectDue
+when project dead line day,projectDue
+when project dead line date,projectDue
+what project due,projectDue
+what project due day,projectDue
+what project due date,projectDue
+what project dead line,projectDue
+what project dead line day,projectDue
+what project dead line date,projectDue
