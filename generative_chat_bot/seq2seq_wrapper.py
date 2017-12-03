@@ -96,7 +96,7 @@ class Seq2Seq(object):
     # run one batch for training
     def train_batch(self, sess, train_batch_gen):
         # get batches
-        batchX, batchY = train_batch_gen.__next__()
+        batchX, batchY = train_batch_gen.next()
         # build feed
         feed_dict = self.get_feed(batchX, batchY, keep_prob=0.5)
         _, loss_v = sess.run([self.train_op, self.loss], feed_dict)
