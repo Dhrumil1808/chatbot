@@ -126,10 +126,11 @@ if __name__ == '__main__':
     fileStream = open(sys.argv[1])
     grammar = parser.getGrammarObject(fileStream)
     log = open("data.csv", "w")
+    log.write('Descript,Category\n')
     for rule in grammar.publicRules:
         expansions = processRHS(rule.rhs)
         for expansion in expansions:
-            log.write(str(rule.lhs)+','+str(expansion)+'\n')
+            log.write(str(expansion)+ ','+str(rule.lhs)+'\n')
 
     log.close()
 

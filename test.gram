@@ -3,36 +3,49 @@
 grammar colors;
 
 
-<greetings> = hello | hey | greetings;
-
+//-----------------------------------------------------
+//----------------Greetings-------------------------
+//-----------------------------------------------------
+// public <greetings> = hello | hey | greetings | how are you | Yo | Sup;
 
 <time> = time;
 
-<class> = course | class;
+<class> = course | class | cmpe297 ( class | course );
 
 <question> = when | what;
 
 <place> = location | room;
 
-//class timing
+//-----------------------------------------------------
+//----------------class timing-------------------------
+//-----------------------------------------------------
 
 public <classtime> = ( <question> <class> (<time> | start) ) | ( <question> (<time> | start) [is the] <class> );
 
-// prof name
+//-----------------------------------------------------
+//------------------prof name-------------------------- 
+//-----------------------------------------------------
 
-public <professorName> = ( who ) (take | takes | teach | teaches) <class> | ( who | what ) [is the] professor [name];
+public <professorName> = ( who ) (take | taking | takes | teach | teaches) [the] <class> | ( who | what ) [is the] professor [name];
 
 <interactProf> = meet | see | ask | contact ;
 
-// office hours
+// -----------------------------------------------------
+// ------------------office hours ----------------------
+// -----------------------------------------------------
 
-public <officeHours> = <question> (office hours | <interactProf> professor);
+
+public <officeHours> = (what are office [hours|timings] [of] professor) | ( when (can I) <interactProf> professor);
 
 
-// office location
+// -----------------------------------------------------
+// ------------------office location -----------------
+// -----------------------------------------------------
 
 
 public <officeLocation> = ( where <interactProf> professor) ) | ( where professor <place> );
+
+
 
 // exam details
 
@@ -42,42 +55,87 @@ public <officeLocation> = ( where <interactProf> professor) ) | ( where professo
 
 <due> = due | dead line;
 
-public <finalDetails> = when <finals> [ time ];
 
-public <midtermDetails> = <question> <finals> [ time ];
+// -----------------------------------------------------
+// ------------------final exam details-----------------
+// -----------------------------------------------------
+
+public <finalDetails> = <question> [is the] <finals> [ time ];
+
+// -----------------------------------------------------
+// ------------------midterm exam details-----------------
+// -----------------------------------------------------
+
+public <midtermDetails> = <question> is [the] <midterm> [ time ];
 
 
 // assignment
 
 <lab> = lab | assignment ;
 
-// general lab 
-public <labDetails> = <question> <lab>;
+// --------------------------------------------
+// ------------------lab 1 due-----------------
+// --------------------------------------------
+
+public <labOneDue> = <question> ((<lab> one) | ( first <lab> )) <due> ;
+
+// --------------------------------------------
+// ------------------lab 2 due-----------------
+// --------------------------------------------
+
+public <labTwoDue> = <question>  ((<lab> two) | ( second <lab> )) <due> ;
 
 // specific lab due
 
-public <labDue> = when <lab> (one | two) <due> ;
-
-// specific lab due
-
-public <labDetails> = what ( is | do we (do | submit | make) for ) <lab> (one | two);
+<labQuestion> = what ( is | do we (do | submit | make) for );
 
 
-// syllabus
+// ---------------------------------------------
+// ------------------lab 1 details-----------------
+// ---------------------------------------------
 
-public <syllabus> = what [ taught | teach ] <class> [ syllabus ];
+public <labOneDetail> = <labQuestion> ((<lab> one) | ( first <lab> ));
+
+// ---------------------------------------------
+// ------------------lab 2 details-----------------
+// ---------------------------------------------
 
 
-// class location 
+public <labTwoDetail> = <labQuestion> ((<lab> two) | ( second <lab> ));
 
 
-public <classLocation> = where class [ <place> ];
+// ---------------------------------------------
+// ------------------ syllabus-----------------
+// ---------------------------------------------
 
-// project due
 
-public <projectDue> = <question> project <due> [day | date];
+public <syllabus> = (what [is] [ taught | teach ] [in] <class>) [ syllabus | content ];
 
-// TODO: Project details
+
+// ---------------------------------------------
+// ------------------ class location -----------------
+// ---------------------------------------------
+
+
+public <classLocation> = ( where | what ) is the <class> [ <place> ];
+
+
+// ---------------------------------------------
+// ------------------project due -----------------
+// ---------------------------------------------
+
+
+public <projectDue> = ( <question> | what ) is project <due> [day | date];
+
+
+// ---------------------------------------------
+// ------------------project details-----------------
+// ---------------------------------------------
+
+
+public <projectDetails> = what ( is the | do we (do | submit | make) for ) (final | class) project;
+
+
 
 
 
