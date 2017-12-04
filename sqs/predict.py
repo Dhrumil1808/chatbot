@@ -16,7 +16,7 @@ def getModel():
     metadata, idx_q, idx_a = data.load_data(PATH='datasets/cornell_corpus/')
     (trainX, trainY), (testX, testY), (validX, validY) = data_utils.split_dataset(idx_q, idx_a)
     train_batch_gen = data_utils.rand_batch_gen(trainX, trainY, 32)
-    
+
     print len(trainX)
     test_batch_gen = data_utils.rand_batch_gen(testX, testY, 256)
     input_ = test_batch_gen.next()[0]
@@ -52,7 +52,7 @@ def chat(model,sess,question):
     qtokenized =  [w.strip() for w in questions.split(' ') if w]
     input_array = np.array([data.pad_seq(qtokenized, w_2_id, 25)])
     input_array = input_array.T
-    print(input_array)
+    #print(input_array)
     emb_dim = 400
 
     batch_size = 16
@@ -62,15 +62,30 @@ def chat(model,sess,question):
 
     predict = model.predict(sess=sess, X=input_array)
 
-    print("predict",predict)
-    response = [id_2_w[i] for i in predict[0]]
-    print("response",response)
+    #print("predict",predict)
+    response=""
+    for i in predict[0]:
+        if (id_2_w[i]!='_' and id_2_w[i] !='unk'):
+            response=response+" "+id_2_w[i]
 
+    #print("response",response)
+    if(response==""):
+        response="I am sorry. I didn't understand that!"
+    return response
 
 model, sess = getModel()
+
+
+
 chat(model,sess,"What do you think about life? Is life fair for you? You are a jerk though!")
 chat(model,sess, "well i really think hes got a chance")
 chat(model,sess,"my god these people are insane")
 chat(model,sess,"You never wanted to go out with 'me, did you?")
 chat(model,sess,"How do you get your hair to look like that?")
 chat(model,sess,"You think you ' re the only sophomore at the prom?")
+
+
+while (True):
+    the_input = raw_input("Enter input: ")
+    response  = chat(model,sess,the_input)
+    print response
