@@ -1,3 +1,4 @@
+
 import os
 import sys
 import json
@@ -10,15 +11,16 @@ import pandas as pd
 import tensorflow as tf
 from text_cnn_rnn import TextCNNRNN
 
+
 logging.getLogger().setLevel(logging.INFO)
 
 def load_trained_params(trained_dir):
 	params = json.loads(open(trained_dir + 'trained_parameters.json').read())
-	print params
+	##print (params)
 	words_index = json.loads(open(trained_dir + 'words_index.json').read())
-	print words_index
+	##print (words_index)
 	labels = json.loads(open(trained_dir + 'labels.json').read())
-	print labels
+	##print (labels)
 
 	with open(trained_dir + 'embeddings.pickle', 'rb') as input_file:
 		fetched_embedding = pickle.load(input_file)
@@ -28,9 +30,9 @@ def load_trained_params(trained_dir):
 def load_test_data(test_file, labels):
 	df = pd.read_csv(test_file)
 	select = ['Descript']
-	print df
+	##print (df)
 	df = df.dropna(axis=0, how='any', subset=select)
-	print df
+	#print (df)
 	test_examples = df[select[0]].apply(lambda x: data_helper.clean_str(x).split(' ')).tolist()
 
 	num_labels = len(labels)
@@ -60,25 +62,27 @@ def map_word_to_index(examples, words_index):
 	return x_
 
 def predict_unseen_data():
-	trained_dir = sys.argv[1]
+	test_x = []
+	test_input = os.environ.get('TEST_X', None)
+	if test_input is None:
+		logging.critical(' TEST_X is not found ')
+		sys.exit()
+	test_x.append(test_input.split(' '))
+	trained_dir = os.environ.get('TRAINED_RESULTS', None)
+	if trained_dir is None:
+		logging.critical(' TRAINED_RESULTS is not found ')
+		sys.exit()
+
 	if not trained_dir.endswith('/'):
 		trained_dir += '/'
-	test_file = sys.argv[2]
 
 	params, words_index, labels, embedding_mat = load_trained_params(trained_dir)
-	x_, y_, df = load_test_data(test_file, labels)
-	x_ = data_helper.pad_sentences(x_, forced_sequence_length=params['sequence_length'])
+	x_ = data_helper.pad_sentences(test_x, forced_sequence_length=params['sequence_length'])
 	x_ = map_word_to_index(x_, words_index)
 
 	x_test, y_test = np.asarray(x_), None
-	if y_ is not None:
-		y_test = np.asarray(y_)
 
 	timestamp = trained_dir.split('/')[-2].split('_')[-1]
-	predicted_dir = './predicted_results_' + timestamp + '/'
-	if os.path.exists(predicted_dir):
-		shutil.rmtree(predicted_dir)
-	os.makedirs(predicted_dir)
 
 	with tf.Graph().as_default():
 		session_conf = tf.ConfigProto(allow_soft_placement=True, log_device_placement=False)
@@ -125,16 +129,12 @@ def predict_unseen_data():
 					predictions.append(batch_prediction)
 					predict_labels.append(labels[batch_prediction])
 
-			df['PREDICTED'] = predict_labels
-			columns = sorted(df.columns, reverse=True)
-			df.to_csv(predicted_dir + 'predictions_all.csv', index=False, columns=columns, sep='|')
+			sys.stdout.write(predict_labels[0])
 
-			if y_test is not None:
-				y_test = np.array(np.argmax(y_test, axis=1))
-				accuracy = sum(np.array(predictions) == y_test) / float(len(y_test))
-				logging.critical('The prediction accuracy is: {}'.format(accuracy))
 
-			logging.critical('Prediction is complete, all files have been saved: {}'.format(predicted_dir))
+
+			os.environ['PRED_LABEL'] = predict_labels[0]
+
 
 if __name__ == '__main__':
 	# python3 predict.py ./trained_results_1478563595/ ./data/small_samples.csv
