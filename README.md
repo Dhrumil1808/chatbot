@@ -1,5 +1,6 @@
 # chatbot
-
+TensorFlow = 1.3
+Python: 2.7
 
 Generate Data :
 
@@ -34,6 +35,16 @@ Predict CNN
     python predict.py 
 
 ```
+
+For Sequence to Sequence Generator 
+
+1. download trained model from: https://drive.google.com/open?id=1Ths1P1OPSTV6TGClo5vMmJPTJijFRh-L
+2. Unzip this in sqs/ckpt/cornell_corpus folder
+
+
+
+
+
 
 Run on python 2.6/2.7 from here
 
