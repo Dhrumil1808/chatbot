@@ -12,9 +12,11 @@ import tensorflow as tf
 from text_cnn_rnn import TextCNNRNN
 
 
-import cpredict as pred
+#import cpredict as pred
 
 logging.getLogger().setLevel(logging.INFO)
+
+fallback_threshold=0.09
 
 def load_trained_params(trained_dir):
 	params = json.loads(open(trained_dir + 'trained_parameters.json').read())
@@ -78,7 +80,7 @@ def predict_unseen_data():
 		logging.critical(' TEST_X is not found ')
 		sys.exit()
 	test_x.append(test_input.split(' '))
-	os.environ['TRAINED_RESULTS']='trained_results_1512442231'
+	os.environ['TRAINED_RESULTS']='trained_results'
 	trained_dir = os.environ.get('TRAINED_RESULTS', None)
 	#"trained_results_1512430544"
 
@@ -91,6 +93,7 @@ def predict_unseen_data():
 		trained_dir += '/'
 
 	params, words_index, labels, embedding_mat = load_trained_params(trained_dir)
+
 	x_ = data_helper.pad_sentences(test_x, forced_sequence_length=params['sequence_length'])
 	x_ = map_word_to_index(x_, words_index)
 
@@ -120,7 +123,7 @@ def predict_unseen_data():
 			def predict_step(x_batch):
 				feed_dict = {
 					cnn_rnn.input_x: x_batch,
-					cnn_rnn.dropout_keep_prob: 1.0,
+					cnn_rnn.dropout: 1.0,
 					cnn_rnn.batch_size: len(x_batch),
 					cnn_rnn.pad: np.zeros([len(x_batch), 1, params['embedding_dim'], 1]),
 					cnn_rnn.real_len: real_len(x_batch),
@@ -141,26 +144,42 @@ def predict_unseen_data():
 				scores,batch_predictions = predict_step(x_batch)
 				print scores
 				score=normalize(scores[0])
-				'''
 				print score
-				print score.max()
+
 				max_score = score.max()
-				if(max_score>0.1):
+				print max_score
+				probable =[]
+				presponse =""
+				if(max_score > fallback_threshold):
 					print scores
 					for batch_prediction in batch_predictions:
 						predictions.append(batch_prediction)
 						predict_labels.append(labels[batch_prediction])
 					response= predict_labels[0]
+
+					range_perc = 0.01
+
+					max_range = max_score + (max_score * range_perc)
+					min_range = max_score - (max_score * range_perc)
+					i=0
+					presponse="Or Did you ask for this? "
+					for s in score:
+						if(s > min_range and s < max_range):
+							presponse = presponse + labels[i]+" , "
+						i=i+1
+					for batch_prediction in batch_predictions:
+						predictions.append(batch_prediction)
+						predict_labels.append(labels[batch_prediction])
+					response= predict_labels[0]
+
 				else:
+
 					response="Fall back!"
-					pred.chat(os.environ.get('TEST_X'))
-				'''
-				#print scores
-				for batch_prediction in batch_predictions:
-					predictions.append(batch_prediction)
-					predict_labels.append(labels[batch_prediction])
-				response= predict_labels[0]
-			sys.stdout.write(response)
+					#pred.chat(os.environ.get('TEST_X'))
+				if (len(probable)>0):
+					response=response+"   "+presponse;
+
+			#sys.stdout.write(response)
 			#print response
 
 			os.environ['PRED_LABEL'] = response

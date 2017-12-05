@@ -13,15 +13,27 @@ from text_cnn_rnn import TextCNNRNN
 from sklearn.model_selection import train_test_split
 
 logging.getLogger().setLevel(logging.INFO)
-
-def train_cnn_rnn():
-	input_file = sys.argv[1]
+def train_cnn():
+	input_file = './data/train_new.csv'
 	x_, y_, vocabulary, vocabulary_inv, df, labels = data_helper.load_data(input_file)
 
-	training_config = sys.argv[2]
-	params = json.loads(open(training_config).read())
+	params = {
+    "batch_size": 256,
+    "dropout": 0.5,
+    "embedding_dim": 300,
+    "evaluate_every": 200,
+    "filter_sizes": "3,4,5",
+    "hidden_unit": 100,
+    "l2_reg_lambda": 0.0,
+    "max_pool_size": 3,
+    "non_static": False,
+    "num_epochs": 1000,
+    "num_filters": 32
+}
 
 	# Assign a 300 dimension vector to each word
+
+
 	word_embeddings = data_helper.load_embeddings(vocabulary)
 	embedding_mat = [word_embeddings[word] for index, word in enumerate(vocabulary_inv)]
 	embedding_mat = np.array(embedding_mat, dtype = np.float32)
@@ -36,8 +48,8 @@ def train_cnn_rnn():
 	print('y_train: {}, y_dev: {}, y_test: {}'.format(len(y_train), len(y_dev), len(y_test)))
 
 	# Create a directory, everything related to the training will be saved in this directory
-	timestamp = str(int(time.time()))
-	trained_dir = './trained_results_' + timestamp + '/'
+
+	trained_dir = './trained_results/'
 	if os.path.exists(trained_dir):
 		shutil.rmtree(trained_dir)
 	os.makedirs(trained_dir)
@@ -65,7 +77,7 @@ def train_cnn_rnn():
 			train_op = optimizer.apply_gradients(grads_and_vars, global_step=global_step)
 
 			# Checkpoint files will be saved in this directory during training
-			checkpoint_dir = './checkpoints_' + timestamp + '/'
+			checkpoint_dir = './checkpoints/'
 			if os.path.exists(checkpoint_dir):
 				shutil.rmtree(checkpoint_dir)
 			os.makedirs(checkpoint_dir)
@@ -78,7 +90,7 @@ def train_cnn_rnn():
 				feed_dict = {
 					cnn_rnn.input_x: x_batch,
 					cnn_rnn.input_y: y_batch,
-					cnn_rnn.dropout_keep_prob: params['dropout_keep_prob'],
+					cnn_rnn.dropout: params['dropout'],
 					cnn_rnn.batch_size: len(x_batch),
 					cnn_rnn.pad: np.zeros([len(x_batch), 1, params['embedding_dim'], 1]),
 					cnn_rnn.real_len: real_len(x_batch),
@@ -89,7 +101,7 @@ def train_cnn_rnn():
 				feed_dict = {
 					cnn_rnn.input_x: x_batch,
 					cnn_rnn.input_y: y_batch,
-					cnn_rnn.dropout_keep_prob: 1.0,
+					cnn_rnn.dropout: 1.0,
 					cnn_rnn.batch_size: len(x_batch),
 					cnn_rnn.pad: np.zeros([len(x_batch), 1, params['embedding_dim'], 1]),
 					cnn_rnn.real_len: real_len(x_batch),
@@ -112,9 +124,9 @@ def train_cnn_rnn():
 				current_step = tf.train.global_step(sess, global_step)
 
 				# Evaluate the model with x_dev and y_dev
+
 				if current_step % params['evaluate_every'] == 0:
 					dev_batches = data_helper.batch_iter(list(zip(x_dev, y_dev)), params['batch_size'], 1)
-
 					total_dev_correct = 0
 					for dev_batch in dev_batches:
 						x_dev_batch, y_dev_batch = zip(*dev_batch)
@@ -128,7 +140,7 @@ def train_cnn_rnn():
 						path = saver.save(sess, checkpoint_prefix, global_step=current_step)
 						logging.critical('Saved model {} at step {}'.format(path, best_at_step))
 						logging.critical('Best accuracy {} at step {}'.format(best_accuracy, best_at_step))
-			logging.critical('Training is complete, testing the best model on x_test and y_test')
+			logging.critical('Training is complete, testing the best model')
 
 			# Save the model files to trained_dir. predict.py needs trained model files.
 			saver.save(sess, trained_dir + "best_model.ckpt")
@@ -157,4 +169,4 @@ def train_cnn_rnn():
 
 if __name__ == '__main__':
 	# python3 train.py ./data/train.csv.zip ./training_config.json
-	train_cnn_rnn()
+	train_cnn()

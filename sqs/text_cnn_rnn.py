@@ -7,7 +7,7 @@ class TextCNNRNN(object):
 
 		self.input_x = tf.placeholder(tf.int32, [None, sequence_length], name='input_x')
 		self.input_y = tf.placeholder(tf.float32, [None, num_classes], name='input_y')
-		self.dropout_keep_prob = tf.placeholder(tf.float32, name='dropout_keep_prob')
+		self.dropout = tf.placeholder(tf.float32, name='dropout')
 		self.batch_size = tf.placeholder(tf.int32, [])
 		self.pad = tf.placeholder(tf.float32, [None, 1, embedding_size, 1], name='pad')
 		self.real_len = tf.placeholder(tf.int32, [None], name='real_len')
@@ -24,7 +24,7 @@ class TextCNNRNN(object):
 
 		pooled_concat = []
 		reduced = np.int32(np.ceil((sequence_length) * 1.0 / max_pool_size))
-		
+
 		for i, filter_size in enumerate(filter_sizes):
 			with tf.name_scope('conv-maxpool-%s' % filter_size):
 
@@ -48,16 +48,16 @@ class TextCNNRNN(object):
 				pooled_concat.append(pooled)
 
 		pooled_concat = tf.concat(pooled_concat,2)
-		pooled_concat = tf.nn.dropout(pooled_concat, self.dropout_keep_prob)
+		pooled_concat = tf.nn.dropout(pooled_concat, self.dropout)
 
 		# lstm_cell = tf.nn.rnn_cell.LSTMCell(num_units=hidden_unit)
 
 		#lstm_cell = tf.nn.rnn_cell.GRUCell(num_units=hidden_unit)
 		lstm_cell = tf.contrib.rnn.GRUCell(num_units=hidden_unit)
 
-		#lstm_cell = tf.nn.rnn_cell.DropoutWrapper(lstm_cell, output_keep_prob=self.dropout_keep_prob)
-		lstm_cell = tf.contrib.rnn.DropoutWrapper(lstm_cell, output_keep_prob=self.dropout_keep_prob)
-		
+		#lstm_cell = tf.nn.rnn_cell.DropoutWrapper(lstm_cell, output_keep_prob=self.dropout)
+		lstm_cell = tf.contrib.rnn.DropoutWrapper(lstm_cell, output_keep_prob=self.dropout)
+
 
 		self._initial_state = lstm_cell.zero_state(self.batch_size, tf.float32)
 		#inputs = [tf.squeeze(input_, [1]) for input_ in tf.split(1, reduced, pooled_concat)]
@@ -86,7 +86,7 @@ class TextCNNRNN(object):
 			self.predictions = tf.argmax(self.scores, 1, name='predictions')
 
 		with tf.name_scope('loss'):
-			losses = tf.nn.softmax_cross_entropy_with_logits(labels = self.input_y, logits = self.scores) #  only named arguments accepted            
+			losses = tf.nn.softmax_cross_entropy_with_logits(labels = self.input_y, logits = self.scores) #  only named arguments accepted
 			self.loss = tf.reduce_mean(losses) + l2_reg_lambda * l2_loss
 
 		with tf.name_scope('accuracy'):
