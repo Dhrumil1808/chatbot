@@ -554,3 +554,13 @@ what do I build for final project,<projectDetails>
 what do I build for class project,<projectDetails>
 what do I build for the final project,<projectDetails>
 what do I build for the class project,<projectDetails>
+Hello,<Greeting>
+How are you,<Greeting>
+Thank you,<Greeting>
+Good Morning,<Greeting>
+Good Evening,<Greeting>
+Good Night,<Exit>
+Bye,<Exit>
+Bye Bye,<Exit>
+Good Bye,<Exit>
+
