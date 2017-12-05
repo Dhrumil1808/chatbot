@@ -18,7 +18,7 @@ Pre-processing (requires data generation) :
   
 ```
 
-* navigate to CNN dir
+* navigate to sqs dir
 
 Train CNN
 
