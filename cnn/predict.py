@@ -68,15 +68,16 @@ def normalize(v):
 
 def predict_unseen_data():
 	test_x = []
-	#test_input = os.environ.get('TEST_X', None)
-	test_input = "When is the midterm"
+	test_input = os.environ.get('TEST_X', None)
+	#test_input = "When is the midterm"
 
 	if test_input is None:
 		logging.critical(' TEST_X is not found ')
 		sys.exit()
 	test_x.append(test_input.split(' '))
-	trained_dir = "trained_results_1512430544"
-	#os.environ.get('TRAINED_RESULTS', None)
+	trained_dir = os.environ.get('TRAINED_RESULTS', None)
+	#"trained_results_1512430544"
+
 
 	if trained_dir is None:
 		logging.critical(' TRAINED_RESULTS is not found ')
