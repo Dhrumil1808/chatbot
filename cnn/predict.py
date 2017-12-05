@@ -60,15 +60,24 @@ def map_word_to_index(examples, words_index):
 				temp.append(0)
 		x_.append(temp)
 	return x_
+def normalize(v):
+    norm=np.linalg.norm(v, ord=1)
+    if norm==0:
+        norm=np.finfo(v.dtype).eps
+    return v/norm
 
 def predict_unseen_data():
 	test_x = []
-	test_input = os.environ.get('TEST_X', None)
+	#test_input = os.environ.get('TEST_X', None)
+	test_input = "When is the midterm"
+
 	if test_input is None:
 		logging.critical(' TEST_X is not found ')
 		sys.exit()
 	test_x.append(test_input.split(' '))
-	trained_dir = os.environ.get('TRAINED_RESULTS', None)
+	trained_dir = "trained_results_1512430544"
+	#os.environ.get('TRAINED_RESULTS', None)
+
 	if trained_dir is None:
 		logging.critical(' TRAINED_RESULTS is not found ')
 		sys.exit()
@@ -111,8 +120,8 @@ def predict_unseen_data():
 					cnn_rnn.pad: np.zeros([len(x_batch), 1, params['embedding_dim'], 1]),
 					cnn_rnn.real_len: real_len(x_batch),
 				}
-				predictions = sess.run([cnn_rnn.predictions], feed_dict)
-				return predictions
+				scores,predictions = sess.run([cnn_rnn.scores,cnn_rnn.predictions], feed_dict)
+				return scores,predictions
 
 			checkpoint_file = trained_dir + 'best_model.ckpt'
 			saver = tf.train.Saver(tf.all_variables())
@@ -121,19 +130,27 @@ def predict_unseen_data():
 			logging.critical('{} has been loaded'.format(checkpoint_file))
 
 			batches = data_helper.batch_iter(list(x_test), params['batch_size'], 1, shuffle=False)
-
+			response=""
 			predictions, predict_labels = [], []
 			for x_batch in batches:
-				batch_predictions = predict_step(x_batch)[0]
-				for batch_prediction in batch_predictions:
-					predictions.append(batch_prediction)
-					predict_labels.append(labels[batch_prediction])
+				scores,batch_predictions = predict_step(x_batch)
+				print scores
+				score=normalize(scores[0])
+				print score
+				print score.max()
+				max_score = score.max()
+				if(max_score>0.1):
+					print scores
+					for batch_prediction in batch_predictions:
+						predictions.append(batch_prediction)
+						predict_labels.append(labels[batch_prediction])
+					response= predict_labels[0]
+				else:
+					response="Fall back!"
+			sys.stdout.write(response)
+			print response
 
-			sys.stdout.write(predict_labels[0])
-
-
-
-			os.environ['PRED_LABEL'] = predict_labels[0]
+			os.environ['PRED_LABEL'] = response
 
 
 if __name__ == '__main__':
