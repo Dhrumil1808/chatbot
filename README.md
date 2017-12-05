@@ -20,13 +20,10 @@ Pre-processing (requires data generation) :
 ```
 
 * navigate to sqs dir
+The CNN has been trained and the latest checkpoint for the training can be downloaded from the following link:
+https://drive.google.com/open?id=1aTpWLqj0md1Xm22oSZNCbFgCdYHTxFOD
 
-Train CNN
-
-```
-    python train.py 
-
-```
+This file contains the latest checkpoint and the labels in the josn format. It also contains the information regarding word count and this folder needs to be placed in the sqs directory.
 
 Predict CNN
 
