@@ -8,7 +8,7 @@ sys.path.append(parent + '/MITIE/mitielib')
 
 from mitie import *
 
-slack_client = SlackClient('xoxb-279929363731-AbxTTfZmDUIqPq1MuwjvhwX4')
+slack_client = SlackClient('ENTER KEY HERE')
 BOT_NAME = 'jarvis'
 
 def get_bot_id():
@@ -39,26 +39,24 @@ def handle_command(command, channel):
         are valid commands. If so, then acts on the commands. If not,
         returns back what it needs for clarification.
     """
-    response = "Not sure what you mean. Use the *" + EXAMPLE_COMMAND + \
-               "* command with numbers, delimited by spaces."
-    if command.startswith(EXAMPLE_COMMAND):
-        command = ' '.join(command.split(' ')[1:])
-        entities = entity_extraction(command)
-        label = predict(command )
-        if label is None:
-            print ' Prediction failed !!!!!!'
+    command = ' '.join(command.split(' ')[1:])
+    entities = entity_extraction(command)
+    label = predict(command)
+    if label is None:
+        print ' Prediction failed !!!!!!'
 
-        response = ' ' + label + ' is predicted '
+    response = getResponse(label)
 
-        if len(entities) > 0 :
-            response += " It's a " + str(entities[0][1]).lower()
+    if len(entities) > 0:
+        response += ". It's a " + str(entities[0][1]).lower()
 
-        slack_client.api_call("chat.postMessage", channel=channel,
+    slack_client.api_call("chat.postMessage", channel=channel,
                           text=response, as_user=True)
+
 
 def predict(input):
     os.environ['TEST_X'] = input
-    os.environ['TRAINED_RESULTS'] = os.environ.get('PRED_LABEL', '/home/rentala/PycharmProjects/chatbot/cnn/trained_results_1512259834')
+    os.environ['TRAINED_RESULTS'] = os.environ.get('PRED_LABEL', '/home/rentala/PycharmProjects/chatbot/cnn/trained_results_1512365080')
     #print os.path.abspath(__file__)
     #try and get cnn from here ?
     slackbot_dir = os.path.dirname(sys.modules['__main__'].__file__)
@@ -92,7 +90,22 @@ def parse_slack_output(slack_rtm_output):
                        output['channel']
     return None, None
 
-
+def getResponse(label):
+    return {
+        '<classtime>': 'Class is on every tuesday from 3PM to 5:45PM',
+        '<professorName>': ' Prof Simon Shim teaches the Deep Learning class',
+        '<officeHours>': 'Office hours are on monday 3PM',
+        '<finalDetails>': 'Final exam is on December 14 2-45 to 5-00',
+        '<midtermDetails>': 'Midterm exam in on October 17th 3PM ',
+        '<labOneDue>': 'Lab one is due on Oct 15 ',
+        '<labTwoDue>': 'Lab two is due on Mov 12 ',
+        '<labOneDetail>': 'For lab one, build a hand writing recognition modal',
+        '<labTwoDetail>': 'For lab two, build a style transfer modal',
+        '<syllabus>': 'In this class, you will learn deep learning concepts, CNN, RNN and DNN.',
+        '<classLocation>': 'Class is located at Health Building 407',
+        '<projectDue>': ' TODAAYYY !!!!',
+        '<projectDetails>': 'Build a chatbot that answers questions about the class'
+    }.get(label, " Sorry I ddin't get that")
 
 if __name__ == "__main__":
     READ_WEBSOCKET_DELAY = 1 # 1 second delay between reading from firehose

@@ -89,22 +89,43 @@ who teaches the cmpe297 class,<professorName>
 who teaches the cmpe297 course,<professorName>
 who professor,<professorName>
 who professor name,<professorName>
+who professors,<professorName>
+who professors name,<professorName>
 who is the professor,<professorName>
 who is the professor name,<professorName>
+who is the professors,<professorName>
+who is the professors name,<professorName>
 what professor,<professorName>
 what professor name,<professorName>
+what professors,<professorName>
+what professors name,<professorName>
 what is the professor,<professorName>
 what is the professor name,<professorName>
+what is the professors,<professorName>
+what is the professors name,<professorName>
 what are office professor,<officeHours>
+what are office professors,<officeHours>
 what are office of professor,<officeHours>
+what are office of professors,<officeHours>
 what are office hours professor,<officeHours>
+what are office hours professors,<officeHours>
 what are office hours of professor,<officeHours>
+what are office hours of professors,<officeHours>
 what are office timings professor,<officeHours>
+what are office timings professors,<officeHours>
 what are office timings of professor,<officeHours>
+what are office timings of professors,<officeHours>
 when can I meet professor,<officeHours>
+when can I meet professors,<officeHours>
 when can I see professor,<officeHours>
+when can I see professors,<officeHours>
 when can I ask professor,<officeHours>
+when can I ask professors,<officeHours>
 when can I contact professor,<officeHours>
+when can I contact professors,<officeHours>
+what are the,<officeHours>
+is the professor office hours,<officeHours>
+is the professors office hours,<officeHours>
 when final,<finalDetails>
 when final time,<finalDetails>
 when final exam,<finalDetails>
@@ -177,38 +198,142 @@ what second lab due,<labTwoDue>
 what second lab dead line,<labTwoDue>
 what second assignment due,<labTwoDue>
 what second assignment dead line,<labTwoDue>
-what is lab one,<labOneDetail>
-what is assignment one,<labOneDetail>
-what is first lab,<labOneDetail>
-what is first assignment,<labOneDetail>
+what is the lab one,<labOneDetail>
+what is the assignment one,<labOneDetail>
+what is the first lab,<labOneDetail>
+what is the first assignment,<labOneDetail>
 what do we do for lab one,<labOneDetail>
 what do we do for assignment one,<labOneDetail>
 what do we do for first lab,<labOneDetail>
 what do we do for first assignment,<labOneDetail>
+what do we do for the lab one,<labOneDetail>
+what do we do for the assignment one,<labOneDetail>
+what do we do for the first lab,<labOneDetail>
+what do we do for the first assignment,<labOneDetail>
 what do we submit for lab one,<labOneDetail>
 what do we submit for assignment one,<labOneDetail>
 what do we submit for first lab,<labOneDetail>
 what do we submit for first assignment,<labOneDetail>
+what do we submit for the lab one,<labOneDetail>
+what do we submit for the assignment one,<labOneDetail>
+what do we submit for the first lab,<labOneDetail>
+what do we submit for the first assignment,<labOneDetail>
 what do we make for lab one,<labOneDetail>
 what do we make for assignment one,<labOneDetail>
 what do we make for first lab,<labOneDetail>
 what do we make for first assignment,<labOneDetail>
-what is lab two,<labTwoDetail>
-what is assignment two,<labTwoDetail>
-what is second lab,<labTwoDetail>
-what is second assignment,<labTwoDetail>
+what do we make for the lab one,<labOneDetail>
+what do we make for the assignment one,<labOneDetail>
+what do we make for the first lab,<labOneDetail>
+what do we make for the first assignment,<labOneDetail>
+what do we build for lab one,<labOneDetail>
+what do we build for assignment one,<labOneDetail>
+what do we build for first lab,<labOneDetail>
+what do we build for first assignment,<labOneDetail>
+what do we build for the lab one,<labOneDetail>
+what do we build for the assignment one,<labOneDetail>
+what do we build for the first lab,<labOneDetail>
+what do we build for the first assignment,<labOneDetail>
+what do I do for lab one,<labOneDetail>
+what do I do for assignment one,<labOneDetail>
+what do I do for first lab,<labOneDetail>
+what do I do for first assignment,<labOneDetail>
+what do I do for the lab one,<labOneDetail>
+what do I do for the assignment one,<labOneDetail>
+what do I do for the first lab,<labOneDetail>
+what do I do for the first assignment,<labOneDetail>
+what do I submit for lab one,<labOneDetail>
+what do I submit for assignment one,<labOneDetail>
+what do I submit for first lab,<labOneDetail>
+what do I submit for first assignment,<labOneDetail>
+what do I submit for the lab one,<labOneDetail>
+what do I submit for the assignment one,<labOneDetail>
+what do I submit for the first lab,<labOneDetail>
+what do I submit for the first assignment,<labOneDetail>
+what do I make for lab one,<labOneDetail>
+what do I make for assignment one,<labOneDetail>
+what do I make for first lab,<labOneDetail>
+what do I make for first assignment,<labOneDetail>
+what do I make for the lab one,<labOneDetail>
+what do I make for the assignment one,<labOneDetail>
+what do I make for the first lab,<labOneDetail>
+what do I make for the first assignment,<labOneDetail>
+what do I build for lab one,<labOneDetail>
+what do I build for assignment one,<labOneDetail>
+what do I build for first lab,<labOneDetail>
+what do I build for first assignment,<labOneDetail>
+what do I build for the lab one,<labOneDetail>
+what do I build for the assignment one,<labOneDetail>
+what do I build for the first lab,<labOneDetail>
+what do I build for the first assignment,<labOneDetail>
+what is the lab two,<labTwoDetail>
+what is the assignment two,<labTwoDetail>
+what is the second lab,<labTwoDetail>
+what is the second assignment,<labTwoDetail>
 what do we do for lab two,<labTwoDetail>
 what do we do for assignment two,<labTwoDetail>
 what do we do for second lab,<labTwoDetail>
 what do we do for second assignment,<labTwoDetail>
+what do we do for the lab two,<labTwoDetail>
+what do we do for the assignment two,<labTwoDetail>
+what do we do for the second lab,<labTwoDetail>
+what do we do for the second assignment,<labTwoDetail>
 what do we submit for lab two,<labTwoDetail>
 what do we submit for assignment two,<labTwoDetail>
 what do we submit for second lab,<labTwoDetail>
 what do we submit for second assignment,<labTwoDetail>
+what do we submit for the lab two,<labTwoDetail>
+what do we submit for the assignment two,<labTwoDetail>
+what do we submit for the second lab,<labTwoDetail>
+what do we submit for the second assignment,<labTwoDetail>
 what do we make for lab two,<labTwoDetail>
 what do we make for assignment two,<labTwoDetail>
 what do we make for second lab,<labTwoDetail>
 what do we make for second assignment,<labTwoDetail>
+what do we make for the lab two,<labTwoDetail>
+what do we make for the assignment two,<labTwoDetail>
+what do we make for the second lab,<labTwoDetail>
+what do we make for the second assignment,<labTwoDetail>
+what do we build for lab two,<labTwoDetail>
+what do we build for assignment two,<labTwoDetail>
+what do we build for second lab,<labTwoDetail>
+what do we build for second assignment,<labTwoDetail>
+what do we build for the lab two,<labTwoDetail>
+what do we build for the assignment two,<labTwoDetail>
+what do we build for the second lab,<labTwoDetail>
+what do we build for the second assignment,<labTwoDetail>
+what do I do for lab two,<labTwoDetail>
+what do I do for assignment two,<labTwoDetail>
+what do I do for second lab,<labTwoDetail>
+what do I do for second assignment,<labTwoDetail>
+what do I do for the lab two,<labTwoDetail>
+what do I do for the assignment two,<labTwoDetail>
+what do I do for the second lab,<labTwoDetail>
+what do I do for the second assignment,<labTwoDetail>
+what do I submit for lab two,<labTwoDetail>
+what do I submit for assignment two,<labTwoDetail>
+what do I submit for second lab,<labTwoDetail>
+what do I submit for second assignment,<labTwoDetail>
+what do I submit for the lab two,<labTwoDetail>
+what do I submit for the assignment two,<labTwoDetail>
+what do I submit for the second lab,<labTwoDetail>
+what do I submit for the second assignment,<labTwoDetail>
+what do I make for lab two,<labTwoDetail>
+what do I make for assignment two,<labTwoDetail>
+what do I make for second lab,<labTwoDetail>
+what do I make for second assignment,<labTwoDetail>
+what do I make for the lab two,<labTwoDetail>
+what do I make for the assignment two,<labTwoDetail>
+what do I make for the second lab,<labTwoDetail>
+what do I make for the second assignment,<labTwoDetail>
+what do I build for lab two,<labTwoDetail>
+what do I build for assignment two,<labTwoDetail>
+what do I build for second lab,<labTwoDetail>
+what do I build for second assignment,<labTwoDetail>
+what do I build for the lab two,<labTwoDetail>
+what do I build for the assignment two,<labTwoDetail>
+what do I build for the second lab,<labTwoDetail>
+what do I build for the second assignment,<labTwoDetail>
 what course,<syllabus>
 what course syllabus,<syllabus>
 what course content,<syllabus>
@@ -399,7 +524,33 @@ what is the final project,<projectDetails>
 what is the class project,<projectDetails>
 what do we do for final project,<projectDetails>
 what do we do for class project,<projectDetails>
+what do we do for the final project,<projectDetails>
+what do we do for the class project,<projectDetails>
 what do we submit for final project,<projectDetails>
 what do we submit for class project,<projectDetails>
+what do we submit for the final project,<projectDetails>
+what do we submit for the class project,<projectDetails>
 what do we make for final project,<projectDetails>
 what do we make for class project,<projectDetails>
+what do we make for the final project,<projectDetails>
+what do we make for the class project,<projectDetails>
+what do we build for final project,<projectDetails>
+what do we build for class project,<projectDetails>
+what do we build for the final project,<projectDetails>
+what do we build for the class project,<projectDetails>
+what do I do for final project,<projectDetails>
+what do I do for class project,<projectDetails>
+what do I do for the final project,<projectDetails>
+what do I do for the class project,<projectDetails>
+what do I submit for final project,<projectDetails>
+what do I submit for class project,<projectDetails>
+what do I submit for the final project,<projectDetails>
+what do I submit for the class project,<projectDetails>
+what do I make for final project,<projectDetails>
+what do I make for class project,<projectDetails>
+what do I make for the final project,<projectDetails>
+what do I make for the class project,<projectDetails>
+what do I build for final project,<projectDetails>
+what do I build for class project,<projectDetails>
+what do I build for the final project,<projectDetails>
+what do I build for the class project,<projectDetails>

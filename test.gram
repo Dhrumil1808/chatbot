@@ -16,6 +16,8 @@ grammar colors;
 
 <place> = location | room;
 
+<professor> = professor | professors;
+
 //-----------------------------------------------------
 //----------------class timing-------------------------
 //-----------------------------------------------------
@@ -26,7 +28,7 @@ public <classtime> = ( <question> <class> (<time> | start) ) | ( <question> (<ti
 //------------------prof name-------------------------- 
 //-----------------------------------------------------
 
-public <professorName> = ( who ) (take | taking | takes | teach | teaches) [the] <class> | ( who | what ) [is the] professor [name];
+public <professorName> = ( who ) (take | taking | takes | teach | teaches) [the] <class> | ( who | what ) [is the] <professor> [name];
 
 <interactProf> = meet | see | ask | contact ;
 
@@ -35,7 +37,7 @@ public <professorName> = ( who ) (take | taking | takes | teach | teaches) [the]
 // -----------------------------------------------------
 
 
-public <officeHours> = (what are office [hours|timings] [of] professor) | ( when (can I) <interactProf> professor);
+public <officeHours> = (what are office [hours|timings] [of] <professor>) | ( when (can I) <interactProf> <professor>) | (what (are the) | (is the) <professor> office hours);
 
 
 // -----------------------------------------------------
@@ -43,7 +45,7 @@ public <officeHours> = (what are office [hours|timings] [of] professor) | ( when
 // -----------------------------------------------------
 
 
-public <officeLocation> = ( where <interactProf> professor) ) | ( where professor <place> );
+public <officeLocation> = ( where <interactProf> <professor>) ) | ( where [is the] <professor> <place> );
 
 
 
@@ -87,7 +89,7 @@ public <labTwoDue> = <question>  ((<lab> two) | ( second <lab> )) <due> ;
 
 // specific lab due
 
-<labQuestion> = what ( is | do we (do | submit | make) for );
+<labQuestion> = what ( is the | do (we|I) (do | submit | make | build) for [the] );
 
 
 // ---------------------------------------------
@@ -133,7 +135,7 @@ public <projectDue> = ( <question> | what ) is project <due> [day | date];
 // ---------------------------------------------
 
 
-public <projectDetails> = what ( is the | do we (do | submit | make) for ) (final | class) project;
+public <projectDetails> = <labQuestion> (final | class) project;
 
 
 
