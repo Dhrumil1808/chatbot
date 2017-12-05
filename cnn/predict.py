@@ -66,17 +66,20 @@ def normalize(v):
         norm=np.finfo(v.dtype).eps
     return v/norm
 
+params, words_index, labels, embedding_mat = load_trained_params(trained_dir)
+
 def predict_unseen_data():
 	test_x = []
-	test_input = os.environ.get('TEST_X', None)
-	#test_input = "When is the midterm"
+	#test_input = os.environ.get('TEST_X', None)
+	test_input = "What time is the class"
 
 	if test_input is None:
 		logging.critical(' TEST_X is not found ')
 		sys.exit()
 	test_x.append(test_input.split(' '))
-	trained_dir = os.environ.get('TRAINED_RESULTS', None)
-	#"trained_results_1512430544"
+	trained_dir = "trained_results_1512435063"
+	#os.environ.get('TRAINED_RESULTS', None)
+
 
 
 	if trained_dir is None:
@@ -86,7 +89,6 @@ def predict_unseen_data():
 	if not trained_dir.endswith('/'):
 		trained_dir += '/'
 
-	params, words_index, labels, embedding_mat = load_trained_params(trained_dir)
 	x_ = data_helper.pad_sentences(test_x, forced_sequence_length=params['sequence_length'])
 	x_ = map_word_to_index(x_, words_index)
 
@@ -139,6 +141,16 @@ def predict_unseen_data():
 				score=normalize(scores[0])
 				print score
 				print score.max()
+				mscore=score.max()
+				range_perc = 0.01
+
+				max_range = mscore + (mscore * range_perc)
+				min_range = mscore - (mscore * range_perc)
+
+				for s in score:
+					if(s > min_range and s < max_range)
+
+
 				max_score = score.max()
 				if(max_score>0.1):
 					print scores
