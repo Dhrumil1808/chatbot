@@ -80,7 +80,11 @@ def predict_unseen_data():
 		logging.critical(' TEST_X is not found ')
 		sys.exit()
 	test_x.append(test_input.split(' '))
+<<<<<<< HEAD
 	os.environ['TRAINED_RESULTS']='trained_results'
+=======
+	os.environ['TRAINED_RESULTS']='trained_results_1512453169'
+>>>>>>> c0b56685e160788557259bf3fe329692ba3144af
 	trained_dir = os.environ.get('TRAINED_RESULTS', None)
 	#"trained_results_1512430544"
 
@@ -176,6 +180,10 @@ def predict_unseen_data():
 
 					response="Fall back!"
 					#pred.chat(os.environ.get('TEST_X'))
+<<<<<<< HEAD
+=======
+
+>>>>>>> c0b56685e160788557259bf3fe329692ba3144af
 				if (len(probable)>0):
 					response=response+"   "+presponse;
 
