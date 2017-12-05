@@ -7,19 +7,22 @@ import pickle
 import logging
 import data_helper
 import numpy as np
-import pandas as pd
 import tensorflow as tf
+import pandas as pd
 from text_cnn_rnn import TextCNNRNN
 
 
-#import cpredict as pred
+import cpredict as cpred
 
 logging.getLogger().setLevel(logging.INFO)
 
 fallback_threshold=0.09
 
+trained_dir='trained_results/'
+
+params = json.loads(open(trained_dir+ 'trained_parameters.json').read())
+
 def load_trained_params(trained_dir):
-	params = json.loads(open(trained_dir + 'trained_parameters.json').read())
 	##print (params)
 	words_index = json.loads(open(trained_dir + 'words_index.json').read())
 	##print (words_index)
@@ -70,21 +73,18 @@ def normalize(v):
         norm=np.finfo(v.dtype).eps
     return v/norm
 
-def predict_unseen_data():
+def predict_unseen_data(test_input):
 	test_x = []
 	#os.environ['TEST_X'] = 'What is the weather'
-	test_input = os.environ.get('TEST_X', None)
+	#test_input = os.environ.get('TEST_X', None)
 	#test_input = "When is the midterm"
 
 	if test_input is None:
 		logging.critical(' TEST_X is not found ')
 		sys.exit()
 	test_x.append(test_input.split(' '))
-<<<<<<< HEAD
+
 	os.environ['TRAINED_RESULTS']='trained_results'
-=======
-	os.environ['TRAINED_RESULTS']='trained_results_1512453169'
->>>>>>> c0b56685e160788557259bf3fe329692ba3144af
 	trained_dir = os.environ.get('TRAINED_RESULTS', None)
 	#"trained_results_1512430544"
 
@@ -178,24 +178,22 @@ def predict_unseen_data():
 
 				else:
 
-					response="Fall back!"
-					#pred.chat(os.environ.get('TEST_X'))
-<<<<<<< HEAD
-=======
+					#response="Fall back!"
+					response=cpred.chat(test_input)
 
->>>>>>> c0b56685e160788557259bf3fe329692ba3144af
 				if (len(probable)>0):
 					response=response+"   "+presponse;
 
-			#sys.stdout.write(response)
-			#print response
+			sys.stdout.write(response)
+			print response
 
 			os.environ['PRED_LABEL'] = response
-
-
+			return response
+'''
 if __name__ == '__main__':
 	while (True):
 		the_input = raw_input("Enter input: ")
 		os.environ['TEST_X']=the_input
-		predict_unseen_data()
+		predict_unseen_data(the_input)
 		print os.environ.get('PRED_LABEL')
+'''

@@ -1,6 +1,8 @@
 import os, sys, subprocess
 import time
 from slackclient import SlackClient
+import predict as pred
+#import cpredict as cpred
 
 parent = os.path.dirname(os.path.realpath(__file__))
 
@@ -8,7 +10,7 @@ sys.path.append(parent + '/MITIE/mitielib')
 
 from mitie import *
 
-slack_client = SlackClient('ENTER KEY HERE')
+slack_client = SlackClient('xoxb-279929363731-Py2LJV2NsopxbZkqCF07v8Yo')
 BOT_NAME = 'jarvis'
 
 def get_bot_id():
@@ -55,17 +57,8 @@ def handle_command(command, channel):
 
 
 def predict(input):
-    os.environ['TEST_X'] = input
-    os.environ['TRAINED_RESULTS'] = os.environ.get('PRED_LABEL', '/home/rentala/PycharmProjects/chatbot/cnn/trained_results_1512365080')
-    #print os.path.abspath(__file__)
-    #try and get cnn from here ?
-    slackbot_dir = os.path.dirname(sys.modules['__main__'].__file__)
-    predict_loc = '/home/rentala/PycharmProjects/chatbot/cnn/predict.py'
+    output=pred.predict_unseen_data(input)
 
-    p = subprocess.Popen([sys.executable, predict_loc], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    output, err = p.communicate()
-
-    label = os.environ.get('PRED_LABEL', None)
     return output
 
 def entity_extraction(command):
@@ -104,8 +97,10 @@ def getResponse(label):
         '<syllabus>': 'In this class, you will learn deep learning concepts, CNN, RNN and DNN.',
         '<classLocation>': 'Class is located at Health Building 407',
         '<projectDue>': ' TODAAYYY !!!!',
-        '<projectDetails>': 'Build a chatbot that answers questions about the class'
-    }.get(label, " Sorry I ddin't get that")
+        '<projectDetails>': 'Build a chatbot that answers questions about the class',
+        '<Greeting>': 'Hi, how are you?',
+        '<Exit>': 'Good bye, Nice talking to you'
+    }.get(label, label)
 
 if __name__ == "__main__":
     READ_WEBSOCKET_DELAY = 1 # 1 second delay between reading from firehose
@@ -113,7 +108,7 @@ if __name__ == "__main__":
         print("\n ---  \n StarterBot connected and running! \n --- \n ---")
 
         print("loading NER model...")
-        ner = named_entity_extractor('ner_model.dat')
+        ner = named_entity_extractor('new_ner_model.dat')
 
         print("\nTags output by this NER model:", ner.get_possible_ner_tags())
 
@@ -126,6 +121,3 @@ if __name__ == "__main__":
             time.sleep(READ_WEBSOCKET_DELAY)
     else:
         print("Connection failed. Invalid Slack token or bot ID?")
-
-
-
