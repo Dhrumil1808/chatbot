@@ -23,7 +23,6 @@ import numpy as np
 import pickle
 
 
-
 '''
     1. Read from 'movie-lines.txt'
     2. Create a dictionary with ( key = line_id, value = text )
