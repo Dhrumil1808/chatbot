@@ -1,0 +1,556 @@
+Descript,Category
+when course time,<classtime>
+when course start,<classtime>
+when class time,<classtime>
+when class start,<classtime>
+when cmpe297 class time,<classtime>
+when cmpe297 class start,<classtime>
+when cmpe297 course time,<classtime>
+when cmpe297 course start,<classtime>
+what course time,<classtime>
+what course start,<classtime>
+what class time,<classtime>
+what class start,<classtime>
+what cmpe297 class time,<classtime>
+what cmpe297 class start,<classtime>
+what cmpe297 course time,<classtime>
+what cmpe297 course start,<classtime>
+when time course,<classtime>
+when time class,<classtime>
+when time cmpe297 class,<classtime>
+when time cmpe297 course,<classtime>
+when time is the course,<classtime>
+when time is the class,<classtime>
+when time is the cmpe297 class,<classtime>
+when time is the cmpe297 course,<classtime>
+when start course,<classtime>
+when start class,<classtime>
+when start cmpe297 class,<classtime>
+when start cmpe297 course,<classtime>
+when start is the course,<classtime>
+when start is the class,<classtime>
+when start is the cmpe297 class,<classtime>
+when start is the cmpe297 course,<classtime>
+what time course,<classtime>
+what time class,<classtime>
+what time cmpe297 class,<classtime>
+what time cmpe297 course,<classtime>
+what time is the course,<classtime>
+what time is the class,<classtime>
+what time is the cmpe297 class,<classtime>
+what time is the cmpe297 course,<classtime>
+what start course,<classtime>
+what start class,<classtime>
+what start cmpe297 class,<classtime>
+what start cmpe297 course,<classtime>
+what start is the course,<classtime>
+what start is the class,<classtime>
+what start is the cmpe297 class,<classtime>
+what start is the cmpe297 course,<classtime>
+who take course,<professorName>
+who take class,<professorName>
+who take cmpe297 class,<professorName>
+who take cmpe297 course,<professorName>
+who take the course,<professorName>
+who take the class,<professorName>
+who take the cmpe297 class,<professorName>
+who take the cmpe297 course,<professorName>
+who taking course,<professorName>
+who taking class,<professorName>
+who taking cmpe297 class,<professorName>
+who taking cmpe297 course,<professorName>
+who taking the course,<professorName>
+who taking the class,<professorName>
+who taking the cmpe297 class,<professorName>
+who taking the cmpe297 course,<professorName>
+who takes course,<professorName>
+who takes class,<professorName>
+who takes cmpe297 class,<professorName>
+who takes cmpe297 course,<professorName>
+who takes the course,<professorName>
+who takes the class,<professorName>
+who takes the cmpe297 class,<professorName>
+who takes the cmpe297 course,<professorName>
+who teach course,<professorName>
+who teach class,<professorName>
+who teach cmpe297 class,<professorName>
+who teach cmpe297 course,<professorName>
+who teach the course,<professorName>
+who teach the class,<professorName>
+who teach the cmpe297 class,<professorName>
+who teach the cmpe297 course,<professorName>
+who teaches course,<professorName>
+who teaches class,<professorName>
+who teaches cmpe297 class,<professorName>
+who teaches cmpe297 course,<professorName>
+who teaches the course,<professorName>
+who teaches the class,<professorName>
+who teaches the cmpe297 class,<professorName>
+who teaches the cmpe297 course,<professorName>
+who professor,<professorName>
+who professor name,<professorName>
+who professors,<professorName>
+who professors name,<professorName>
+who is the professor,<professorName>
+who is the professor name,<professorName>
+who is the professors,<professorName>
+who is the professors name,<professorName>
+what professor,<professorName>
+what professor name,<professorName>
+what professors,<professorName>
+what professors name,<professorName>
+what is the professor,<professorName>
+what is the professor name,<professorName>
+what is the professors,<professorName>
+what is the professors name,<professorName>
+what are office professor,<officeHours>
+what are office professors,<officeHours>
+what are office of professor,<officeHours>
+what are office of professors,<officeHours>
+what are office hours professor,<officeHours>
+what are office hours professors,<officeHours>
+what are office hours of professor,<officeHours>
+what are office hours of professors,<officeHours>
+what are office timings professor,<officeHours>
+what are office timings professors,<officeHours>
+what are office timings of professor,<officeHours>
+what are office timings of professors,<officeHours>
+when can I meet professor,<officeHours>
+when can I meet professors,<officeHours>
+when can I see professor,<officeHours>
+when can I see professors,<officeHours>
+when can I ask professor,<officeHours>
+when can I ask professors,<officeHours>
+when can I contact professor,<officeHours>
+when can I contact professors,<officeHours>
+what are the,<officeHours>
+is the professor office hours,<officeHours>
+is the professors office hours,<officeHours>
+when final,<finalDetails>
+when final time,<finalDetails>
+when final exam,<finalDetails>
+when final exam time,<finalDetails>
+when last exam,<finalDetails>
+when last exam time,<finalDetails>
+when is the final,<finalDetails>
+when is the final time,<finalDetails>
+when is the final exam,<finalDetails>
+when is the final exam time,<finalDetails>
+when is the last exam,<finalDetails>
+when is the last exam time,<finalDetails>
+what final,<finalDetails>
+what final time,<finalDetails>
+what final exam,<finalDetails>
+what final exam time,<finalDetails>
+what last exam,<finalDetails>
+what last exam time,<finalDetails>
+what is the final,<finalDetails>
+what is the final time,<finalDetails>
+what is the final exam,<finalDetails>
+what is the final exam time,<finalDetails>
+what is the last exam,<finalDetails>
+what is the last exam time,<finalDetails>
+when is midterm,<midtermDetails>
+when is midterm time,<midtermDetails>
+when is midterm exam,<midtermDetails>
+when is midterm exam time,<midtermDetails>
+when is the midterm,<midtermDetails>
+when is the midterm time,<midtermDetails>
+when is the midterm exam,<midtermDetails>
+when is the midterm exam time,<midtermDetails>
+what is midterm,<midtermDetails>
+what is midterm time,<midtermDetails>
+what is midterm exam,<midtermDetails>
+what is midterm exam time,<midtermDetails>
+what is the midterm,<midtermDetails>
+what is the midterm time,<midtermDetails>
+what is the midterm exam,<midtermDetails>
+what is the midterm exam time,<midtermDetails>
+when lab one due,<labOneDue>
+when lab one dead line,<labOneDue>
+when assignment one due,<labOneDue>
+when assignment one dead line,<labOneDue>
+when first lab due,<labOneDue>
+when first lab dead line,<labOneDue>
+when first assignment due,<labOneDue>
+when first assignment dead line,<labOneDue>
+what lab one due,<labOneDue>
+what lab one dead line,<labOneDue>
+what assignment one due,<labOneDue>
+what assignment one dead line,<labOneDue>
+what first lab due,<labOneDue>
+what first lab dead line,<labOneDue>
+what first assignment due,<labOneDue>
+what first assignment dead line,<labOneDue>
+when lab two due,<labTwoDue>
+when lab two dead line,<labTwoDue>
+when assignment two due,<labTwoDue>
+when assignment two dead line,<labTwoDue>
+when second lab due,<labTwoDue>
+when second lab dead line,<labTwoDue>
+when second assignment due,<labTwoDue>
+when second assignment dead line,<labTwoDue>
+what lab two due,<labTwoDue>
+what lab two dead line,<labTwoDue>
+what assignment two due,<labTwoDue>
+what assignment two dead line,<labTwoDue>
+what second lab due,<labTwoDue>
+what second lab dead line,<labTwoDue>
+what second assignment due,<labTwoDue>
+what second assignment dead line,<labTwoDue>
+what is the lab one,<labOneDetail>
+what is the assignment one,<labOneDetail>
+what is the first lab,<labOneDetail>
+what is the first assignment,<labOneDetail>
+what do we do for lab one,<labOneDetail>
+what do we do for assignment one,<labOneDetail>
+what do we do for first lab,<labOneDetail>
+what do we do for first assignment,<labOneDetail>
+what do we do for the lab one,<labOneDetail>
+what do we do for the assignment one,<labOneDetail>
+what do we do for the first lab,<labOneDetail>
+what do we do for the first assignment,<labOneDetail>
+what do we submit for lab one,<labOneDetail>
+what do we submit for assignment one,<labOneDetail>
+what do we submit for first lab,<labOneDetail>
+what do we submit for first assignment,<labOneDetail>
+what do we submit for the lab one,<labOneDetail>
+what do we submit for the assignment one,<labOneDetail>
+what do we submit for the first lab,<labOneDetail>
+what do we submit for the first assignment,<labOneDetail>
+what do we make for lab one,<labOneDetail>
+what do we make for assignment one,<labOneDetail>
+what do we make for first lab,<labOneDetail>
+what do we make for first assignment,<labOneDetail>
+what do we make for the lab one,<labOneDetail>
+what do we make for the assignment one,<labOneDetail>
+what do we make for the first lab,<labOneDetail>
+what do we make for the first assignment,<labOneDetail>
+what do we build for lab one,<labOneDetail>
+what do we build for assignment one,<labOneDetail>
+what do we build for first lab,<labOneDetail>
+what do we build for first assignment,<labOneDetail>
+what do we build for the lab one,<labOneDetail>
+what do we build for the assignment one,<labOneDetail>
+what do we build for the first lab,<labOneDetail>
+what do we build for the first assignment,<labOneDetail>
+what do I do for lab one,<labOneDetail>
+what do I do for assignment one,<labOneDetail>
+what do I do for first lab,<labOneDetail>
+what do I do for first assignment,<labOneDetail>
+what do I do for the lab one,<labOneDetail>
+what do I do for the assignment one,<labOneDetail>
+what do I do for the first lab,<labOneDetail>
+what do I do for the first assignment,<labOneDetail>
+what do I submit for lab one,<labOneDetail>
+what do I submit for assignment one,<labOneDetail>
+what do I submit for first lab,<labOneDetail>
+what do I submit for first assignment,<labOneDetail>
+what do I submit for the lab one,<labOneDetail>
+what do I submit for the assignment one,<labOneDetail>
+what do I submit for the first lab,<labOneDetail>
+what do I submit for the first assignment,<labOneDetail>
+what do I make for lab one,<labOneDetail>
+what do I make for assignment one,<labOneDetail>
+what do I make for first lab,<labOneDetail>
+what do I make for first assignment,<labOneDetail>
+what do I make for the lab one,<labOneDetail>
+what do I make for the assignment one,<labOneDetail>
+what do I make for the first lab,<labOneDetail>
+what do I make for the first assignment,<labOneDetail>
+what do I build for lab one,<labOneDetail>
+what do I build for assignment one,<labOneDetail>
+what do I build for first lab,<labOneDetail>
+what do I build for first assignment,<labOneDetail>
+what do I build for the lab one,<labOneDetail>
+what do I build for the assignment one,<labOneDetail>
+what do I build for the first lab,<labOneDetail>
+what do I build for the first assignment,<labOneDetail>
+what is the lab two,<labTwoDetail>
+what is the assignment two,<labTwoDetail>
+what is the second lab,<labTwoDetail>
+what is the second assignment,<labTwoDetail>
+what do we do for lab two,<labTwoDetail>
+what do we do for assignment two,<labTwoDetail>
+what do we do for second lab,<labTwoDetail>
+what do we do for second assignment,<labTwoDetail>
+what do we do for the lab two,<labTwoDetail>
+what do we do for the assignment two,<labTwoDetail>
+what do we do for the second lab,<labTwoDetail>
+what do we do for the second assignment,<labTwoDetail>
+what do we submit for lab two,<labTwoDetail>
+what do we submit for assignment two,<labTwoDetail>
+what do we submit for second lab,<labTwoDetail>
+what do we submit for second assignment,<labTwoDetail>
+what do we submit for the lab two,<labTwoDetail>
+what do we submit for the assignment two,<labTwoDetail>
+what do we submit for the second lab,<labTwoDetail>
+what do we submit for the second assignment,<labTwoDetail>
+what do we make for lab two,<labTwoDetail>
+what do we make for assignment two,<labTwoDetail>
+what do we make for second lab,<labTwoDetail>
+what do we make for second assignment,<labTwoDetail>
+what do we make for the lab two,<labTwoDetail>
+what do we make for the assignment two,<labTwoDetail>
+what do we make for the second lab,<labTwoDetail>
+what do we make for the second assignment,<labTwoDetail>
+what do we build for lab two,<labTwoDetail>
+what do we build for assignment two,<labTwoDetail>
+what do we build for second lab,<labTwoDetail>
+what do we build for second assignment,<labTwoDetail>
+what do we build for the lab two,<labTwoDetail>
+what do we build for the assignment two,<labTwoDetail>
+what do we build for the second lab,<labTwoDetail>
+what do we build for the second assignment,<labTwoDetail>
+what do I do for lab two,<labTwoDetail>
+what do I do for assignment two,<labTwoDetail>
+what do I do for second lab,<labTwoDetail>
+what do I do for second assignment,<labTwoDetail>
+what do I do for the lab two,<labTwoDetail>
+what do I do for the assignment two,<labTwoDetail>
+what do I do for the second lab,<labTwoDetail>
+what do I do for the second assignment,<labTwoDetail>
+what do I submit for lab two,<labTwoDetail>
+what do I submit for assignment two,<labTwoDetail>
+what do I submit for second lab,<labTwoDetail>
+what do I submit for second assignment,<labTwoDetail>
+what do I submit for the lab two,<labTwoDetail>
+what do I submit for the assignment two,<labTwoDetail>
+what do I submit for the second lab,<labTwoDetail>
+what do I submit for the second assignment,<labTwoDetail>
+what do I make for lab two,<labTwoDetail>
+what do I make for assignment two,<labTwoDetail>
+what do I make for second lab,<labTwoDetail>
+what do I make for second assignment,<labTwoDetail>
+what do I make for the lab two,<labTwoDetail>
+what do I make for the assignment two,<labTwoDetail>
+what do I make for the second lab,<labTwoDetail>
+what do I make for the second assignment,<labTwoDetail>
+what do I build for lab two,<labTwoDetail>
+what do I build for assignment two,<labTwoDetail>
+what do I build for second lab,<labTwoDetail>
+what do I build for second assignment,<labTwoDetail>
+what do I build for the lab two,<labTwoDetail>
+what do I build for the assignment two,<labTwoDetail>
+what do I build for the second lab,<labTwoDetail>
+what do I build for the second assignment,<labTwoDetail>
+what course,<syllabus>
+what course syllabus,<syllabus>
+what course content,<syllabus>
+what class,<syllabus>
+what class syllabus,<syllabus>
+what class content,<syllabus>
+what cmpe297 class,<syllabus>
+what cmpe297 class syllabus,<syllabus>
+what cmpe297 class content,<syllabus>
+what cmpe297 course,<syllabus>
+what cmpe297 course syllabus,<syllabus>
+what cmpe297 course content,<syllabus>
+what in course,<syllabus>
+what in course syllabus,<syllabus>
+what in course content,<syllabus>
+what in class,<syllabus>
+what in class syllabus,<syllabus>
+what in class content,<syllabus>
+what in cmpe297 class,<syllabus>
+what in cmpe297 class syllabus,<syllabus>
+what in cmpe297 class content,<syllabus>
+what in cmpe297 course,<syllabus>
+what in cmpe297 course syllabus,<syllabus>
+what in cmpe297 course content,<syllabus>
+what taught course,<syllabus>
+what taught course syllabus,<syllabus>
+what taught course content,<syllabus>
+what taught class,<syllabus>
+what taught class syllabus,<syllabus>
+what taught class content,<syllabus>
+what taught cmpe297 class,<syllabus>
+what taught cmpe297 class syllabus,<syllabus>
+what taught cmpe297 class content,<syllabus>
+what taught cmpe297 course,<syllabus>
+what taught cmpe297 course syllabus,<syllabus>
+what taught cmpe297 course content,<syllabus>
+what taught in course,<syllabus>
+what taught in course syllabus,<syllabus>
+what taught in course content,<syllabus>
+what taught in class,<syllabus>
+what taught in class syllabus,<syllabus>
+what taught in class content,<syllabus>
+what taught in cmpe297 class,<syllabus>
+what taught in cmpe297 class syllabus,<syllabus>
+what taught in cmpe297 class content,<syllabus>
+what taught in cmpe297 course,<syllabus>
+what taught in cmpe297 course syllabus,<syllabus>
+what taught in cmpe297 course content,<syllabus>
+what teach course,<syllabus>
+what teach course syllabus,<syllabus>
+what teach course content,<syllabus>
+what teach class,<syllabus>
+what teach class syllabus,<syllabus>
+what teach class content,<syllabus>
+what teach cmpe297 class,<syllabus>
+what teach cmpe297 class syllabus,<syllabus>
+what teach cmpe297 class content,<syllabus>
+what teach cmpe297 course,<syllabus>
+what teach cmpe297 course syllabus,<syllabus>
+what teach cmpe297 course content,<syllabus>
+what teach in course,<syllabus>
+what teach in course syllabus,<syllabus>
+what teach in course content,<syllabus>
+what teach in class,<syllabus>
+what teach in class syllabus,<syllabus>
+what teach in class content,<syllabus>
+what teach in cmpe297 class,<syllabus>
+what teach in cmpe297 class syllabus,<syllabus>
+what teach in cmpe297 class content,<syllabus>
+what teach in cmpe297 course,<syllabus>
+what teach in cmpe297 course syllabus,<syllabus>
+what teach in cmpe297 course content,<syllabus>
+what is course,<syllabus>
+what is course syllabus,<syllabus>
+what is course content,<syllabus>
+what is class,<syllabus>
+what is class syllabus,<syllabus>
+what is class content,<syllabus>
+what is cmpe297 class,<syllabus>
+what is cmpe297 class syllabus,<syllabus>
+what is cmpe297 class content,<syllabus>
+what is cmpe297 course,<syllabus>
+what is cmpe297 course syllabus,<syllabus>
+what is cmpe297 course content,<syllabus>
+what is in course,<syllabus>
+what is in course syllabus,<syllabus>
+what is in course content,<syllabus>
+what is in class,<syllabus>
+what is in class syllabus,<syllabus>
+what is in class content,<syllabus>
+what is in cmpe297 class,<syllabus>
+what is in cmpe297 class syllabus,<syllabus>
+what is in cmpe297 class content,<syllabus>
+what is in cmpe297 course,<syllabus>
+what is in cmpe297 course syllabus,<syllabus>
+what is in cmpe297 course content,<syllabus>
+what is taught course,<syllabus>
+what is taught course syllabus,<syllabus>
+what is taught course content,<syllabus>
+what is taught class,<syllabus>
+what is taught class syllabus,<syllabus>
+what is taught class content,<syllabus>
+what is taught cmpe297 class,<syllabus>
+what is taught cmpe297 class syllabus,<syllabus>
+what is taught cmpe297 class content,<syllabus>
+what is taught cmpe297 course,<syllabus>
+what is taught cmpe297 course syllabus,<syllabus>
+what is taught cmpe297 course content,<syllabus>
+what is taught in course,<syllabus>
+what is taught in course syllabus,<syllabus>
+what is taught in course content,<syllabus>
+what is taught in class,<syllabus>
+what is taught in class syllabus,<syllabus>
+what is taught in class content,<syllabus>
+what is taught in cmpe297 class,<syllabus>
+what is taught in cmpe297 class syllabus,<syllabus>
+what is taught in cmpe297 class content,<syllabus>
+what is taught in cmpe297 course,<syllabus>
+what is taught in cmpe297 course syllabus,<syllabus>
+what is taught in cmpe297 course content,<syllabus>
+what is teach course,<syllabus>
+what is teach course syllabus,<syllabus>
+what is teach course content,<syllabus>
+what is teach class,<syllabus>
+what is teach class syllabus,<syllabus>
+what is teach class content,<syllabus>
+what is teach cmpe297 class,<syllabus>
+what is teach cmpe297 class syllabus,<syllabus>
+what is teach cmpe297 class content,<syllabus>
+what is teach cmpe297 course,<syllabus>
+what is teach cmpe297 course syllabus,<syllabus>
+what is teach cmpe297 course content,<syllabus>
+what is teach in course,<syllabus>
+what is teach in course syllabus,<syllabus>
+what is teach in course content,<syllabus>
+what is teach in class,<syllabus>
+what is teach in class syllabus,<syllabus>
+what is teach in class content,<syllabus>
+what is teach in cmpe297 class,<syllabus>
+what is teach in cmpe297 class syllabus,<syllabus>
+what is teach in cmpe297 class content,<syllabus>
+what is teach in cmpe297 course,<syllabus>
+what is teach in cmpe297 course syllabus,<syllabus>
+what is teach in cmpe297 course content,<syllabus>
+where is the course,<classLocation>
+where is the course location,<classLocation>
+where is the course room,<classLocation>
+where is the class,<classLocation>
+where is the class location,<classLocation>
+where is the class room,<classLocation>
+where is the cmpe297 class,<classLocation>
+where is the cmpe297 class location,<classLocation>
+where is the cmpe297 class room,<classLocation>
+where is the cmpe297 course,<classLocation>
+where is the cmpe297 course location,<classLocation>
+where is the cmpe297 course room,<classLocation>
+what is the course,<classLocation>
+what is the course location,<classLocation>
+what is the course room,<classLocation>
+what is the class,<classLocation>
+what is the class location,<classLocation>
+what is the class room,<classLocation>
+what is the cmpe297 class,<classLocation>
+what is the cmpe297 class location,<classLocation>
+what is the cmpe297 class room,<classLocation>
+what is the cmpe297 course,<classLocation>
+what is the cmpe297 course location,<classLocation>
+what is the cmpe297 course room,<classLocation>
+when is project due,<projectDue>
+when is project due day,<projectDue>
+when is project due date,<projectDue>
+when is project dead line,<projectDue>
+when is project dead line day,<projectDue>
+when is project dead line date,<projectDue>
+what is project due,<projectDue>
+what is project due day,<projectDue>
+what is project due date,<projectDue>
+what is project dead line,<projectDue>
+what is project dead line day,<projectDue>
+what is project dead line date,<projectDue>
+what is project due,<projectDue>
+what is project due day,<projectDue>
+what is project due date,<projectDue>
+what is project dead line,<projectDue>
+what is project dead line day,<projectDue>
+what is project dead line date,<projectDue>
+what is the final project,<projectDetails>
+what is the class project,<projectDetails>
+what do we do for final project,<projectDetails>
+what do we do for class project,<projectDetails>
+what do we do for the final project,<projectDetails>
+what do we do for the class project,<projectDetails>
+what do we submit for final project,<projectDetails>
+what do we submit for class project,<projectDetails>
+what do we submit for the final project,<projectDetails>
+what do we submit for the class project,<projectDetails>
+what do we make for final project,<projectDetails>
+what do we make for class project,<projectDetails>
+what do we make for the final project,<projectDetails>
+what do we make for the class project,<projectDetails>
+what do we build for final project,<projectDetails>
+what do we build for class project,<projectDetails>
+what do we build for the final project,<projectDetails>
+what do we build for the class project,<projectDetails>
+what do I do for final project,<projectDetails>
+what do I do for class project,<projectDetails>
+what do I do for the final project,<projectDetails>
+what do I do for the class project,<projectDetails>
+what do I submit for final project,<projectDetails>
+what do I submit for class project,<projectDetails>
+what do I submit for the final project,<projectDetails>
+what do I submit for the class project,<projectDetails>
+what do I make for final project,<projectDetails>
+what do I make for class project,<projectDetails>
+what do I make for the final project,<projectDetails>
+what do I make for the class project,<projectDetails>
+what do I build for final project,<projectDetails>
+what do I build for class project,<projectDetails>
+what do I build for the final project,<projectDetails>
+what do I build for the class project,<projectDetails>
