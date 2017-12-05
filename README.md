@@ -23,7 +23,7 @@ Pre-processing (requires data generation) :
 Train CNN
 
 ```
-    python train.py ./data/train_new.csv ./training_config.json
+    python train.py 
 
 ```
 
@@ -31,7 +31,7 @@ Predict CNN
 
 
 ```
-    python predict.py ./trained_results_1512254446 ./data/small_samples_new.csv
+    python predict.py 
 
 ```
 
